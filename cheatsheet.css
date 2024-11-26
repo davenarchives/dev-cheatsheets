@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #f5ffc6;
+    color: blue;
+    margin: 20px 20px 20px;
+    border-radius: 20px;
+    border: solid 2px black;
+    box-shadow: 2px 10px 10px rgb(0, 0, 0);
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+    color: #00bcd4;
+}
+
+.logo a:hover {
+    color: #5ba0aa;
+    transform: scale(1.0075); 
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 1em;
+    text-indent: 15px;
+    width: 20rem;
+    height: 2rem;
+    margin-left: -22rem;
+}
+
+.search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00bcd4;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    margin-right: -22rem;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+.github {
+    align-items: center;
+}
+
+.github button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.github button:hover {
+    color: #00bcd4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 20px; 
+    border: solid 2px black;
+    box-shadow: 2px 10px 10px rgb(0, 0, 0);
+    width: 300px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.box h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0918a4;
+}
+
+.box ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+}
+
+.box ul li a {
+    text-decoration: none; 
+    display: block;
+    color: #000000; 
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.box ul li a:hover {
+    color: #0056b3;
+    background-color: #00bcd4;
+    background-size: 3rem;
+}

@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Cheatsheets</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">CHEETSHEETS FOR DEVS</div>
+        <div class="logo"><a href="">CHEATSHEETS FOR DEVS</a></div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search cheatsheets...">
+        </div>
         <nav class="navbar">
-            <a href="#home">Home</a>
             <a href="#categories">Categories</a>
             <a href="#about">About</a>
         </nav>
-        <div class="search-container">
-            <input type="text" class="search-bar" placeholder="Search...">
-            <button class="search-button">Search</button>
-        </div>
+        <div class="github">
+                <button><i class="bx bxl-github"></i></button>
+            </div>
+        </div>        
     </header>
+
+
     <main class="container">
         <div class="box">
-            <img src="images/python-logo.png" alt="python">
+            <a href="python.html"><img src="images/python-logo.png" alt="python"></a>
         </div>
         <div class="box">
-            <img src="images/java-logo-1.png" alt="java">
+            <a href="java.html"><img src="images/java-logo-1.png" alt="java"></a>
         </div>
         <div class="box">
-            <img src="images/C_Logo.png" alt="c">
+            <a href="c.html"><img src="images/C_Logo.png" alt="c"></a>
         </div>
         <div class="box">
-            <img src="images/HTML5_logo_and_wordmark.svg.png" alt="html">
+            <a href="html.html"><img src="images/HTML5_logo_and_wordmark.svg.png" alt="html"></a>
         </div>
         <div class="box">
-            <img src="images/css-logo.png" alt="css">
+            <a href="css.html"><img src="images/css-logo.png" alt="css"></a>
         </div>
         <div class="box">
-            <img src="images/JavaScript-Logo.png" alt="javascript">
+            <a href="javascript.html"><img src="images/JavaScript-Logo.png" alt="javascript"></a>
         </div>
         <div class="box">
             <img src="images/C++_logo.png" alt="c++">
@@ -57,6 +62,6 @@
             <img src="images/swift-logo.png" alt="swift">
         </div>
     </main>
-    
+    <script src="light-dark.js"></script>
 </body>
 </html>
