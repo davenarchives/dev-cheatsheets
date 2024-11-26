@@ -16,7 +16,11 @@ body{
     border-radius: 20px;
     border: solid 2px black;
     box-shadow: 2px 10px 10px rgb(0, 0, 0);
+    position: sticky; /* Make the header sticky */
+    top: 0;           /* Stick to the top */
+    z-index: 1000;    /* Ensure it stays above other content */
 }
+
 
 .logo a {
     font-size: 2rem;
@@ -106,6 +110,7 @@ body{
 }
 
 .box h1 {
+    text-align: left;
     font-size: 30px;
     margin-bottom: 20px;
     color: #0918a4;
@@ -134,3 +139,8 @@ body{
     background-color: #00bcd4;
     background-size: 3rem;
 }
+
+a {
+    transition: opacity 0.3s ease;
+}
+
