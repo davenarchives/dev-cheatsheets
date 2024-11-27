@@ -7,24 +7,25 @@ body {
     padding: 20px;
 }
 
-/* -----------------------------------Header Styles------------------------------------------------*/
-
 .header {
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 2.5rem;
     background-color: #f5ffc6;
     color: blue;
-    margin: 1.25rem;
-    border-radius: 1.25rem;
+    margin: 0; 
+    border-radius: 20px; 
     border: solid 0.125rem black;
     box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0);
     flex-wrap: wrap; 
 }
 
 .logo {
-    margin-right: 1.25rem; /* Add space between logo and search-bar */
+    margin-right: 1.25rem; 
 }
 
 .logo a {
