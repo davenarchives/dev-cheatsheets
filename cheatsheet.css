@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-html {
-    font-size: 16px; /* 1rem = 16px */
-}
-
 body {
-    margin: 0;
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
 
 .header {
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 2.5rem; /* 20px 40px */
+    padding: 1.25rem 2.5rem;
     background-color: #f5ffc6;
     color: blue;
-    margin: 1.25rem; /* 20px */
-    border-radius: 1.25rem; /* 20px */
-    border: solid 0.125rem black; /* 2px */
-    box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0); /* 2px 10px 10px */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    margin: 0; 
+    border-radius: 20px; 
+    border: solid 0.125rem black;
+    box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0);
+    flex-wrap: wrap; 
+}
+
+.logo {
+    margin-right: 1.25rem; 
 }
 
 .logo a {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease;
     color: #00bcd4;
+    flex-shrink: 0;
 }
 
 .logo a:hover {
@@ -40,36 +44,40 @@ body {
 }
 
 .search-bar {
-    padding: 0.3125rem; /* 5px */
-    border-radius: 1.875rem; /* 30px */
-    font-size: 1rem; /* 16px */
-    text-indent: 0.9375rem; /* 15px */
-    width: 20rem; /* 320px */
-    height: 2rem; /* 32px */
-    margin-left: -22rem; /* -352px */
+    padding: 0.3125rem;
+    border-radius: 1.875rem;
+    font-size: 1rem;
+    text-indent: 0.9375rem;
+    width: 100%; 
+    max-width: 320px; 
+    height: 2rem;
+    margin-left: 0;
+    flex-grow: 1;
 }
 
 .search-bar:focus {
     outline: none;
-    box-shadow: 0 0 0.3125rem #00bcd4; /* 5px */
+    box-shadow: 0 0 0.3125rem #00bcd4;
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    gap: 1.25rem; /* 20px */
+    gap: 1.25rem;
+    flex-grow: 1;
 }
 
 .navbar {
     display: flex;
-    gap: 2.5rem; /* 40px */
-    margin-right: -22rem; /* -352px */
+    gap: 2.5rem;
+    flex-grow: 1; 
+    justify-content: flex-end;
 }
 
 .navbar a {
     color: black;
     text-decoration: none;
-    font-size: 1.875rem; /* 30px */
+    font-size: 1.875rem;
     transition: color 0.3s;
 }
 
@@ -78,81 +86,130 @@ body {
 }
 
 .github {
+    margin-left: 1.25rem;
     align-items: center;
+    flex-shrink: 0; 
 }
 
 .github button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem;
 }
 
 .github button:hover {
     color: #00bcd4;
 }
 
+/* -------------------------------------Masonry layout-----------------------------------------*/
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem; /* 32px */
-    margin-top: 3.125rem; /* 50px */
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 2rem; /* Add left and right margin */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts to fit 4 items per row */
+    grid-auto-rows: 10px; /* Dynamic height rows */
+    gap: 30px;
+    margin-top: 3rem;
+    padding: 0 2rem;
 }
 
 .box {
-    position: relative;
-    padding: 1.25rem; /* 20px */
-    border-radius: 1.25rem; /* 20px */
-    border: solid 0.125rem black; /* 2px */
-    box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0); /* 2px 10px 10px */
-    width: calc(25% - 2rem); /* 25% width for 4 boxes per row, minus gap */
-    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    padding: 20px;
     box-sizing: border-box;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: solid 0.125rem black;
+    border-radius: 20px;
+    box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0); 
+    background-color: #ff6f61; 
+    transition: transform 0.3s;
+    font-size: 1.2em;
+    color: #fff;
+    grid-row: span 10; 
 }
+
+/* -------------------------------------Masonry layout-----------------------------------------*/
 
 .box:hover {
-    transform: scale(1.03);
-}
-
-.box img {
-    height: 9.375rem; /* 150px */
+    transform: translateY(-10px);
 }
 
 .box h1 {
-    text-align: left;
-    font-size: 1.875rem; /* 30px */
-    margin-bottom: 1.25rem; /* 20px */
+    font-size: 1.875rem; 
+    margin-bottom: 1rem; 
     color: #0918a4;
+    text-align: left;
+    width: 100%;
 }
 
 .box ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .box ul li {
-    margin-bottom: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem; 
 }
 
 .box ul li a {
     text-decoration: none;
-    display: block;
     color: #000000;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem; 
     font-weight: bold;
-    transition: color 0.3s ease;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .box ul li a:hover {
     color: #0056b3;
     background-color: #00bcd4;
-    background-size: 3rem;
+    border-radius: 5px; 
+    padding: 0.2rem 0.4rem; 
 }
 
-a {
-    transition: opacity 0.3s ease;
-}
+ /* ---------------------Specific dimensions and colors for each item ----------------------------*/
+
+ /* -------------Javascript----------------*/
+.box1 { grid-row: span 9; background-color: #8174A0; }
+.box2 { grid-row: span 10; background-color: #89A8B2; }
+.box3 { grid-row: span 8; background-color: #DEAA79; }
+.box4 { grid-row: span 7; background-color: #A6AEBF; }
+.box5 { grid-row: span 22; background-color: #CB9DF0; }
+.box6 { grid-row: span 9; background-color: #C6E7FF; }
+.box7 { grid-row: span 11; background-color: #FFB38E; }
+.box8 { grid-row: span 11; background-color: #FFF6E3; }
+.box9 { grid-row: span 11; background-color: #FFB26F; }
+.box10 { grid-row: span 5; background-color: #789DBC; }
+.box11 { grid-row: span 19; background-color: #ECDFCC; }
+.box12 { grid-row: span 11; background-color: #E5D9F2; }
+.box13 { grid-row: span 7; background-color: #FADFA1; }
+.box14 { grid-row: span 11; background-color: #FF8A8A; }
+ /* -------------Python----------------*/
+ .box15 { grid-row: span 10; background-color: #C0C78C; }
+ .box16 { grid-row: span 48; background-color: #F0DBAF; }
+ .box17 { grid-row: span 12; background-color: #8E7AB5; }
+ .box18 { grid-row: span 8; background-color: #7EACB5; }
+ .box19 { grid-row: span 15; background-color: #E6D9A2; }
+ .box20 { grid-row: span 12; background-color: #A6B37D; }
+.box21 { grid-row: span 9; background-color: #86AB89; }
+.box22 { grid-row: span 6; background-color: #CBE2B5; }
+.box23 { grid-row: span 14; background-color: #F8EDE3; }
+.box24 { grid-row: span 7; background-color: #F6EACB; }
+.box25 { grid-row: span 17; background-color: #F1D3CE; }
+.box26 { grid-row: span 12; background-color: #739072; }
+.box27 { grid-row: span 6; background-color: #D0BFFF; }
+.box28 { grid-row: span 6; background-color: #A0937D; }
+.box29 { grid-row: span 7; background-color: #BB9AB1; }
+.box30 { grid-row: span 8; background-color: #91DDCF; }
+.box31 { grid-row: span 6; background-color: #ACE1AF; }
+.box32 { grid-row: span 7; background-color: #ACE1AF; }
+.box33 { grid-row: span 6; background-color: #DBA979; }
+.box34 { grid-row: span 6; background-color: #FCFFE0; }
+.box35 { grid-row: span 6; background-color: #A79277; }
+.box36 { grid-row: span 5; background-color: #BED7DC; }
+.box37 { grid-row: span 6; background-color: #F6F193; }
+.box38 { grid-row: span 7; background-color: #F2C18D; }
+ /* --------------------------------------*/
