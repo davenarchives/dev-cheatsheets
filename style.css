@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 20px;
 }
+html {
+    scroll-behavior: smooth;
+}
+/* -------------------------------------Home Page Header-----------------------------------------*/
 
 .header {
     position: sticky;
@@ -101,8 +105,70 @@ body {
 .github button:hover {
     color: #00bcd4;
 }
+/* ---------------------------------------Hero Page Styles------------------------------------------------*/
 
-/* -----------------------------------Home Page Box Styles------------------------------------------------*/
+.hero {
+    background-color: #E5E1DA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    height: 70vh;
+    width: 95%;
+    padding: 2rem;
+    border: 2px solid;
+    border-radius: 20px;
+    box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0);
+}
+
+.hero h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.features {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: left;
+    width: 250px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    background-color: rgb(149, 239, 251); 
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.75); 
+    background-color: rgb(230, 247, 255); 
+}
+
+.feature h3 {
+    margin-top: 0;
+    color: #6c63ff;
+}
+.feature p {
+    font-size: 0.9rem;
+}
+
+/* -----------------------------------Home Page Categories Styles-------------------------------------------*/
 
 .container {
     display: flex;
@@ -134,4 +200,12 @@ body {
     height: 150px; 
     max-width: 100%; 
     object-fit: contain; 
+}
+
+.browse {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    gap: 8rem;
+    margin-top: 20px;
 }
