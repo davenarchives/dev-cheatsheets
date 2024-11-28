@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#categories {
+    scroll-margin-top: 10rem;
+}
+
 /* -------------------------------------Home Page Header-------------------------------- */
 
 .header {
@@ -198,10 +202,6 @@ hr {
 }
 
 /* -----------------------------------Home Page Categories Styles-------------------------------------------*/
-
-#categories {
-    scroll-margin-top: 10rem;
-}
 
 .browse {
     border-radius: 20px;
