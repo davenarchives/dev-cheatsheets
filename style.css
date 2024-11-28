@@ -140,6 +140,38 @@ html {
     margin-bottom: 2rem;
 }
 
+.features {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: left;
+    width: 250px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    background-color: rgb(149, 239, 251); 
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.75); 
+    background-color: rgb(230, 247, 255); 
+}
+
+.feature h3 {
+    margin-top: 0;
+    color: #6c63ff;
+}
+.feature p {
+    font-size: 0.9rem;
+}
+
 /* -----------------------------------Home Page Categories Styles-------------------------------------------*/
 
 .container {
