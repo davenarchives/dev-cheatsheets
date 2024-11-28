@@ -10,6 +10,13 @@ document.getElementById('searchInput').addEventListener('input', function () {
                 link.style.pointerEvents = 'auto';
                 link.style.opacity = '1';
                 link.textContent = link.textContent;
+
+                // Reset span styles
+                var spans = link.querySelectorAll('span');
+                spans.forEach(function(span) {
+                    span.style.backgroundColor = ''; // Reset highlight
+                    span.style.color = ''; // Reset text color
+                });
             });
         });
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -24,10 +31,23 @@ document.getElementById('searchInput').addEventListener('input', function () {
             link.style.opacity = '1';
             link.textContent = link.textContent;
 
+            // Reset previous highlights
+            var spans = link.querySelectorAll('span');
+            spans.forEach(function(span) {
+                span.style.backgroundColor = ''; // Reset highlight
+                span.style.color = ''; // Reset text color
+            });
+
             if (linkText.includes(query)) {
                 if (!firstMatch) {
                     firstMatch = link;
                 }
+
+                // Highlight matching spans
+                var regex = new RegExp(query, 'gi');
+                link.innerHTML = link.textContent.replace(regex, function(match) {
+                    return `<span style="background-color: yellow; color: black;">${match}</span>`;
+                });
             } else {
                 link.style.pointerEvents = 'none';
                 link.style.opacity = '0.5';
