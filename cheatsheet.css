@@ -4,7 +4,7 @@ body {
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 
 .header {
@@ -223,4 +223,14 @@ body {
  .box42 { grid-row: span 6; background-color: #C5EBAA; }
  .box43 { grid-row: span 7; background-color: #EADBC8; }
  .box44 { grid-row: span 6; background-color: #EEC759; }
+ /* -------------Java------------------*/
+ .box45 { grid-row: span 10; background-color: #fff; }
+ .box46 { grid-row: span 11; background-color: #fff; }
+ .box47 { grid-row: span 23; background-color: #fff; }
+ .box48 { grid-row: span 8; background-color: #fff; }
+ .box49 { grid-row: span 9; background-color: #fff; }
+ .box50 { grid-row: span 11; background-color: #fff; }
+ .box51 { grid-row: span 13; background-color: #fff; }
+
+
 
