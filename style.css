@@ -127,6 +127,15 @@ html {
     box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0);
 }
 
+.hero img {
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    gap: 2rem;
+}
+
 .hero h1 {
     color: rgb(0, 0, 0);
     font-size: 3rem;
@@ -136,13 +145,14 @@ html {
 
 .hero p {
     color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 .features {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -165,11 +175,17 @@ html {
 }
 
 .feature h3 {
+    font-size: 2rem;
     margin-top: 0;
     color: #6c63ff;
 }
 .feature p {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #007BFF;
 }
 
 /* -----------------------------------Home Page Categories Styles-------------------------------------------*/
