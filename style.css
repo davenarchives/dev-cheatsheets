@@ -78,17 +78,25 @@ html {
     gap: 2.5rem;
     flex-grow: 1; 
     justify-content: flex-end;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall size */
+    transition: background-color 0.3s ease; /* Optional: Smooth hover effect */
 }
 
 .navbar a {
     color: black;
     text-decoration: none;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     transition: color 0.3s;
+    border: 2px dashed transparent;
+    border-radius: 20px;
+    padding: 10px; /* Padding for space inside the border */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall size */
+    transition: background-color 0.3s ease; /* Optional: Smooth hover effect */
 }
 
 .navbar a:hover {
-    color: #00bcd4;
+    border: 2px dashed #000000;
+    background-color: #dcee95;
 }
 
 .github {
@@ -119,6 +127,7 @@ html {
     text-align: center;
     margin: auto;
     margin-top: 1.5rem;
+    margin-bottom: 5rem;
     height: 70vh;
     width: 95%;
     padding: 2rem;
@@ -190,11 +199,34 @@ hr {
 
 /* -----------------------------------Home Page Categories Styles-------------------------------------------*/
 
+#categories {
+    scroll-margin-top: 10rem;
+}
+
+.browse {
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid;
+    transition: background-color 0.3s ease;
+}
+
+.browse h1 {
+    padding: 10px;
+    border: 2px dashed transparent;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.browse h1:hover {
+    border-color: #000000;
+}
+
 .container {
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap; 
     gap: 2.5rem; 
-    margin-top: 6.25rem; 
     justify-content: center; 
     padding: 0 2rem; 
 }
