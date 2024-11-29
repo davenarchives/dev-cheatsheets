@@ -268,6 +268,57 @@ html {
  .box72 { grid-row: span 7; background-color: #8967B3; }
  .box73 { grid-row: span 8; background-color: #A1D6B2; }
  .box74 { grid-row: span 5; background-color: #CEDF9F; }
-
-
+ /* --------------SQL---------------*/
+ .box75 { grid-row: span 6; background-color: #E3CAA5; }
+ .box76 { grid-row: span 7; background-color: #D18CE0; }
+ .box77 { grid-row: span 9; background-color: #F3E9DD; }
+ .box78 { grid-row: span 12; background-color: #CEDF9F; }
+ .box79 { grid-row: span 8; background-color: #8FBDD3; }
+ .box80 { grid-row: span 8; background-color: #F9EBC8; }
+ .box81 { grid-row: span 5; background-color: #9A86A4; }
+ .box82 { grid-row: span 6; background-color: #C4DFAA; }
+ .box83 { grid-row: span 9; background-color: #CDC2AE; }
+ .box84 { grid-row: span 8; background-color: #CBA0AE; }
+ .box85 { grid-row: span 8; background-color: #554994; }
+ .box86 { grid-row: span 7; background-color: #FF9494; }
+ .box87 { grid-row: span 4; background-color: #967E76; }
+ .box88 { grid-row: span 7; background-color: #FAF4B7; }
+ /* --------------HTML---------------*/
+ .box89 { grid-row: span 10; background-color: #A59D84; }
+ .box90 { grid-row: span 26; background-color: #8174A0; }
+ .box91 { grid-row: span 12; background-color: #89A8B2; }
+ .box92 { grid-row: span 4; background-color: #DEAA79; }
+ .box93 { grid-row: span 9; background-color: #A6AEBF; }
+ .box94 { grid-row: span 7; background-color: #CB9DF0; }
+ .box95 { grid-row: span 6; background-color: #C6E7FF; }
+ .box96 { grid-row: span 9; background-color: #BFECFF; }
+ .box97 { grid-row: span 11; background-color: #E4E0E1; }
+ .box98 { grid-row: span 14; background-color: #789DBC; }
+ .box99 { grid-row: span 6; background-color: #A2D2DF; }
+ .box100 { grid-row: span 7; background-color: #FFB38E; }
+ .box101 { grid-row: span 7; background-color: #E7CCCC; }
+ .box102 { grid-row: span 7; background-color: #EDDFE0; }
+ .box103 { grid-row: span 6; background-color: #FFECC8; }
+ .box104 { grid-row: span 5; background-color: #A5B68D; }
+ /* -------------Markdown---------------*/
+ .box105 { grid-row: span 6; background-color: #B9F3FC; }
+ .box106 { grid-row: span 5; background-color: #D9ACF5; }
+ .box107 { grid-row: span 5; background-color: #FFCEFE; }
+ .box108 { grid-row: span 6; background-color: #EDDBC7; }
+ .box109 { grid-row: span 7; background-color: #DFFFD8; }
+ .box110 { grid-row: span 6; background-color: #C9F4AA; }
+ .box111 { grid-row: span 6; background-color: #DFA67B; }
+ .box112 { grid-row: span 5; background-color: #94AF9F; }
+ .box113 { grid-row: span 8; background-color: #D5B4B4; }
+ .box114 { grid-row: span 5; background-color: #FDF7C3; }
+ .box115 { grid-row: span 5; background-color: #FFB4B4; }
+ .box116 { grid-row: span 5; background-color: #DDFFBB; }
+ .box117 { grid-row: span 7; background-color: #B7B7B7; }
+ .box118 { grid-row: span 5; background-color: #CBB279; }
+ .box119 { grid-row: span 5; background-color: #E1ECC8; }
+ .box120 { grid-row: span 6; background-color: #FFD89C; }
+ .box121 { grid-row: span 10; background-color: #D0BFFF; }
+ .box122 { grid-row: span 5; background-color: #ECEE81; }
+ .box123 { grid-row: span 5; background-color: #FF8080; }
+ /* -----------------------------------------*/
 

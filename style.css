@@ -196,34 +196,10 @@ html {
     font-size: 1.25rem;
 }
 
-hr {
-    border: none;
-    border-top: 3px solid #007BFF;
-}
-
 /* -----------------------------------Home Page Categories Styles-------------------------------------------*/
 
-.browse {
-    border-radius: 20px;
-    box-sizing: border-box;
-    border: 2px solid;
-    transition: background-color 0.3s ease;
-}
-
-.browse h1 {
-    padding: 10px;
-    border: 2px dashed transparent;
-    border-radius: 20px;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.browse h1:hover {
-    border-color: #000000;
-}
 
 .container {
-    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap; 
     gap: 2.5rem; 
@@ -241,6 +217,7 @@ hr {
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 1.5rem;
 }
 
 .box:hover {
@@ -254,10 +231,30 @@ hr {
     object-fit: contain; 
 }
 
-.browse {
+/* -----------------------------------Categories Divider-------------------------------------------*/
+
+.divider {
+    margin-top: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: left;
-    gap: 8rem;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100%; 
+}
+
+.divider .text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 20px; 
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+hr {
+    flex-grow: 1; /* Make the line grow to fill the remaining space */
+    height: 2px; /* Line thickness */
+    background: #333; /* Line color */
+    border: none; /* Remove default border styling */
+    margin: 0; /* Remove default margins */
 }
