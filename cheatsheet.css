@@ -179,7 +179,6 @@ html {
     font-size: 1rem; 
     font-weight: bold;
     display: block;
-    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .box ul li a:hover {
