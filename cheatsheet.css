@@ -238,14 +238,37 @@ html {
  .box43 { grid-row: span 7; background-color: #EADBC8; }
  .box44 { grid-row: span 6; background-color: #EEC759; }
  /* -------------Java------------------*/
- .box45 { grid-row: span 10; background-color: #fff; }
- .box46 { grid-row: span 11; background-color: #fff; }
- .box47 { grid-row: span 23; background-color: #fff; }
- .box48 { grid-row: span 8; background-color: #fff; }
- .box49 { grid-row: span 9; background-color: #fff; }
- .box50 { grid-row: span 11; background-color: #fff; }
- .box51 { grid-row: span 13; background-color: #fff; }
- .box52 { grid-row: span 10; background-color: #fff; }
+ .box45 { grid-row: span 10; background-color: #EFB6C8; }
+ .box46 { grid-row: span 11; background-color: #B3C8CF; }
+ .box47 { grid-row: span 23; background-color: #E5E1DA; }
+ .box48 { grid-row: span 8; background-color: #B0EBB4; }
+ .box49 { grid-row: span 9; background-color: #FFE6A9; }
+ .box50 { grid-row: span 11; background-color: #C6E7FF; }
+ .box51 { grid-row: span 13; background-color: #FDDBBB; }
+ .box52 { grid-row: span 10; background-color: #B5C18E; }
+ .box53 { grid-row: span 10; background-color: #E4C087; }
+ .box54 { grid-row: span 6; background-color: #FFB26F; }
+ .box55 { grid-row: span 9; background-color: #A5B68D; }
+ .box56 { grid-row: span 6; background-color: #C96868; }
+ .box57 { grid-row: span 7; background-color: #FEF9D9; }
+ .box58 { grid-row: span 27; background-color: #A6B37D; }
+ .box59 { grid-row: span 8; background-color: #FF8A8A; }
+ .box60 { grid-row: span 8; background-color: #DFD3C3; }
+ .box61 { grid-row: span 21; background-color: #C9DABF; }
+ .box62 { grid-row: span 6; background-color: #B1AFFF; }
+ /* ----------------C-----------------*/
+ .box63 { grid-row: span 13; background-color: #F1F0E8; }
+ .box64 { grid-row: span 8; background-color: #CB9DF0; }
+ .box65 { grid-row: span 11; background-color: #F0C1E1; }
+ .box66 { grid-row: span 6; background-color: #C5D3E8; }
+ .box67 { grid-row: span 6; background-color: #A6B37D; }
+ .box68 { grid-row: span 8; background-color: #FFF6E3; }
+ .box69 { grid-row: span 6; background-color: #789DBC; }
+ .box70 { grid-row: span 5; background-color: #E7CCCC; }
+ .box71 { grid-row: span 5; background-color: #D2E0FB; }
+ .box72 { grid-row: span 7; background-color: #8967B3; }
+ .box73 { grid-row: span 8; background-color: #A1D6B2; }
+ .box74 { grid-row: span 5; background-color: #CEDF9F; }
 
 
 

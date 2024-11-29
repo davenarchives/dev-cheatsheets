@@ -82,8 +82,8 @@ html {
     gap: 2.5rem;
     flex-grow: 1; 
     justify-content: flex-end;
-    box-sizing: border-box; /* Ensures padding doesn't affect overall size */
-    transition: background-color 0.3s ease; /* Optional: Smooth hover effect */
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease; 
 }
 
 .navbar a {
@@ -93,9 +93,9 @@ html {
     transition: color 0.3s;
     border: 2px dashed transparent;
     border-radius: 20px;
-    padding: 10px; /* Padding for space inside the border */
-    box-sizing: border-box; /* Ensures padding doesn't affect overall size */
-    transition: background-color 0.3s ease; /* Optional: Smooth hover effect */
+    padding: 10px;
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease; 
 }
 
 .navbar a:hover {
