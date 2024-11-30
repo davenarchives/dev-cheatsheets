@@ -203,11 +203,14 @@ html {
     display: flex;
     flex-wrap: wrap; 
     gap: 2.5rem; 
-    justify-content: center; 
+    justify-content: flex-start; /* Align items to the left */
     padding: 0 2rem; 
+    max-width: 1200px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
 }
 
 .box {
+    position: relative; /* Set position to relative for the overlay */
     height: 200px;
     width: 200px;
     border: 2px solid black; 
@@ -218,11 +221,12 @@ html {
     align-items: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     margin-bottom: 1.5rem;
+    flex: 0 0 auto; /* Prevent the box from growing or shrinking */
 }
 
 .box:hover {
     transform: translateY(-10px);
-    background-color: rgb(149, 239, 251); 
+    background-color: #f00303;
 }
 
 .box img {
