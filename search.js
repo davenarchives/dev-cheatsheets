@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     searchInput.addEventListener("input", function() {
         const searchTerm = searchInput.value.toLowerCase();
-
         let foundMatch = false;
 
         boxes.forEach(box => {
