@@ -226,7 +226,7 @@ html {
 
 .box:hover {
     transform: translateY(-10px);
-    background-color: #f00303;
+    background-color: #b3b3b3eb;
 }
 
 .box img {
