@@ -318,7 +318,15 @@ html {
  .box121 { grid-row: span 10; background-color: #D0BFFF; }
  .box122 { grid-row: span 5; background-color: #ECEE81; }
  .box123 { grid-row: span 5; background-color: #FF8080; }
- /* ----------------CSS-------------------------*/
- .box124 { grid-row: span 8; background-color: #fff }
- .box125 { grid-row: span 67; background-color: #fff }
+ /* ----------------DBMS-------------------------*/
+ .box124 { grid-row: span 12; background-color: #C6E7FF }
+ .box125 { grid-row: span 11; background-color: #B3C8CF }
+ .box126 { grid-row: span 9; background-color: #E5E1DA }
+ .box127 { grid-row: span 13; background-color: #FFD2A0}
+ .box128 { grid-row: span 13; background-color: #D7D3BF }
+ .box129 { grid-row: span 9; background-color: #A6AEBF }
+ .box130 { grid-row: span 9; background-color: #FFB38E }
+ .box131 { grid-row: span 5; background-color: #AB886D }
+ .box132 { grid-row: span 6; background-color: #EDDFE0 }
+ .box133 { grid-row: span 5; background-color: #C1CFA1 }
 
