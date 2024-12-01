@@ -9,7 +9,9 @@ document.getElementById('searchInput').addEventListener('input', function () {
             links.forEach(function (link) {
                 link.style.pointerEvents = 'auto';
                 link.style.opacity = '1';
-                link.textContent = link.textContent;
+
+                // Reset inner HTML to original
+                link.innerHTML = link.dataset.original; // Store original HTML in a data attribute
 
                 // Reset span styles
                 var spans = link.querySelectorAll('span');
@@ -26,10 +28,15 @@ document.getElementById('searchInput').addEventListener('input', function () {
     boxes.forEach(function (box) {
         var links = box.querySelectorAll('a');
         links.forEach(function (link) {
-            var linkText = link.textContent.toLowerCase();
+            var linkText = link.innerText.toLowerCase();
+
+            // Store original HTML in a data attribute if not already stored
+            if (!link.dataset.original) {
+                link.dataset.original = link.innerHTML;
+            }
+
             link.style.pointerEvents = 'auto';
             link.style.opacity = '1';
-            link.textContent = link.textContent;
 
             // Reset previous highlights
             var spans = link.querySelectorAll('span');
@@ -43,9 +50,9 @@ document.getElementById('searchInput').addEventListener('input', function () {
                     firstMatch = link;
                 }
 
-                // Highlight matching spans
-                var regex = new RegExp(query, 'gi');
-                link.innerHTML = link.textContent.replace(regex, function(match) {
+                // Highlight matching text
+                var regex = new RegExp('(' + query + ')', 'gi');
+                link.innerHTML = link.dataset.original.replace(regex, function(match) {
                     return `<span style="background-color: yellow; color: black;">${match}</span>`;
                 });
             } else {
@@ -70,7 +77,7 @@ document.addEventListener('click', function (event) {
     if (event.target && event.target.tagName === 'A') {
         var clickedLink = event.target;
         var query = document.getElementById('searchInput').value.toLowerCase();
-        var linkText = clickedLink.textContent.toLowerCase();
+        var linkText = clickedLink.innerText.toLowerCase();
 
         if (linkText.includes(query)) {
             clickedLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
