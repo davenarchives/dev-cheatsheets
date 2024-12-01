@@ -318,5 +318,7 @@ html {
  .box121 { grid-row: span 10; background-color: #D0BFFF; }
  .box122 { grid-row: span 5; background-color: #ECEE81; }
  .box123 { grid-row: span 5; background-color: #FF8080; }
- /* -----------------------------------------*/
+ /* ----------------CSS-------------------------*/
+ .box124 { grid-row: span 8; background-color: #fff }
+ .box125 { grid-row: span 67; background-color: #fff }
 
