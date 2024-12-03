@@ -487,6 +487,7 @@ hr {
     }
 
     .navbar a {
+        padding: 8px;
         font-size: 1rem;
     }
 
@@ -550,6 +551,7 @@ hr {
     }
 
     .navbar a {
+        padding: 7px;
         font-size: 0.75rem;
     }
 
@@ -603,6 +605,10 @@ hr {
     .divider .text {
         font-size: 1rem;
     }
+
+    #categories {
+        scroll-margin-top: 6rem;
+    }
     
 }
 
@@ -625,6 +631,7 @@ hr {
     }
 
     .navbar a {
+        padding: 5px;
         font-size: 0.60rem;
     }
 
@@ -681,5 +688,9 @@ hr {
     
     .divider .text {
         font-size: 0.75rem;
+    }
+
+    #categories {
+        scroll-margin-top: 5rem;
     }
 }
