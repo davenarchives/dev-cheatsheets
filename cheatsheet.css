@@ -3,6 +3,7 @@
 body {
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
+    user-select: none;
     margin: 0;
 }
 
@@ -29,14 +30,14 @@ html {
 }
 
 .logo {
-    margin-right: 1.25rem; 
+    margin-right: 1.25rem;
 }
 
 .logo a {
     font-size: 2rem;
     font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
+    display: inline;
+    text-decoration: none !important;
     transition: transform 0.3s ease;
     color: #00bcd4;
     flex-shrink: 0;
@@ -46,7 +47,11 @@ html {
     color: #5ba0aa;
     transform: scale(1.0075);
 }
-
+.logo img {
+    display: none;
+    width: 40px;
+    height: auto;
+}
 .search-bar {
     padding: 0.3125rem;
     border-radius: 1.875rem;
@@ -76,8 +81,8 @@ html {
     gap: 2.5rem;
     flex-grow: 1; 
     justify-content: flex-end;
-    box-sizing: border-box; /* Ensures padding doesn't affect overall size */
-    transition: background-color 0.3s ease; /* Optional: Smooth hover effect */
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease; 
 }
 
 .navbar a {
@@ -87,9 +92,9 @@ html {
     transition: color 0.3s;
     border: 2px dashed transparent;
     border-radius: 20px;
-    padding: 10px; /* Padding for space inside the border */
-    box-sizing: border-box; /* Ensures padding doesn't affect overall size */
-    transition: background-color 0.3s ease; /* Optional: Smooth hover effect */
+    padding: 10px;
+    box-sizing: border-box; 
+    transition: background-color 0.3s ease; 
 }
 
 .navbar a:hover {
@@ -113,6 +118,7 @@ html {
 .github button:hover {
     color: #00bcd4;
 }
+
 /* ------------------------------------Overview-----------------------------------------*/
 .overview {
     display: flex;
@@ -123,7 +129,7 @@ html {
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 95%;
+    width: 90%;
     padding: 2rem;
     border: 2px solid;
     border-radius: 20px;
@@ -135,7 +141,7 @@ html {
     height: 100px;
 }
 
-.overview .logo {
+.logo-overview {
     display: flex;
     gap: 2rem;
 }
@@ -168,7 +174,7 @@ html {
     flex-direction: column; 
     align-items: flex-start; 
     justify-content: flex-start; 
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     border: solid 0.125rem black;
     border-radius: 20px;
@@ -190,10 +196,6 @@ html {
     color: #0918a4;
     text-align: left;
     width: 100%;
-}
-.box h2 {
-    padding: 1rem;
-    border-radius: 20px;
 }
 
 .box ul {
@@ -221,6 +223,308 @@ html {
     background-color: #00bcd4;
     border-radius: 5px; 
 }
+
+
+@media (max-width: 1098px) {
+
+    .logo {
+        margin-right: 1rem; 
+    }
+    
+    .logo a {
+        font-size: 1.5rem;
+    }
+    
+    .search-bar {
+        max-width: 170px; 
+        font-size: 1rem;
+        height: 1.5rem;
+    }
+    
+    .search-container {
+        gap: 1rem;
+    }
+    
+    .navbar {
+        gap: 2rem;
+    }
+    
+    .navbar a {
+        font-size: 1rem;
+    }
+    
+    
+    .github {
+        margin-left: 1rem;
+    }
+    
+    .github button {
+        font-size: 2rem;
+    }
+
+    .overview {
+        width: 90%;
+        padding: 2rem;
+    }
+    .overview img {
+        height: 75px;
+    }
+    .overview h1 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+    .overview p {
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusts to fit 4 items per row */
+    }
+
+    .box h1 {
+        font-size: 1.75rem; 
+        margin-bottom: 1rem; 
+    }
+    
+    
+    .box ul li {
+        margin-bottom: 0.525rem; 
+    }
+    
+    .box ul li a {
+        padding-left: 1rem;
+        font-size: 0.9rem; 
+    }
+
+}
+
+    
+@media (max-width: 878px) {
+
+    .logo span {
+        display: none;
+    }
+    .logo img {
+        display: inline-block;
+        width: 40px;
+        height: auto;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); /* Adjusts to fit 4 items per row */
+    }
+
+    .box h1 {
+        font-size: 1.65rem; 
+        margin-bottom: 0.75rem; 
+    }
+    
+    
+    .box ul li {
+        margin-bottom: 0.425rem; 
+    }
+    
+    .box ul li a {
+        padding-left: 1rem;
+        font-size: 0.8rem; 
+    }
+}
+@media (max-width: 813px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts to fit 4 items per row */
+    }
+
+    .box h1 {
+        font-size: 1.45rem; 
+        margin-bottom: 0.75rem; 
+    }
+}
+
+@media (max-width: 729px) {
+
+    .logo img {
+        width: 40px;
+        height: auto;
+    }
+    
+    .logo {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    .search-bar {
+        max-width: 125px; 
+        font-size: 1rem;
+        height: 1rem;
+    }
+    
+    .navbar {
+        gap: 0.75rem;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .github button {
+        font-size: 1.75rem;
+    }
+
+    .overview {
+        width: 85%;
+        padding: 1.75rem;
+    }
+
+    .overview img {
+        height: 50px;
+    }
+    .overview h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+    .overview p {
+        font-size: 1.25rem;
+        padding: 0 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); /* Adjusts to fit 4 items per row */
+    }
+
+    .box h1 {
+        font-size: 1.25rem; 
+        margin-bottom: 0.75rem; 
+    }
+
+}
+@media (max-width: 585px) {
+
+    .logo img {
+        width: 30px;
+        height: auto;
+    }
+    
+    .logo {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .header {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .search-bar {
+        max-width: 100px; 
+        font-size: 0.75rem;
+        height: 1rem;
+    }
+    
+    .navbar {
+        gap: 0.5rem;
+    }
+
+    .navbar a {
+        padding: 7px;
+        font-size: 0.75rem;
+    }
+
+    .github button {
+        font-size: 1.5rem;
+    }
+
+    .logo-overview {
+        gap: 1rem;
+    }
+
+    .overview img {
+        height: 40px;
+    }
+    .overview h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .overview p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); /* Adjusts to fit 4 items per row */
+    }
+
+    .overview {
+        padding: 1.25rem;
+    }
+
+    .logo-overview {
+        gap: 0.5rem;
+    }
+
+    .overview img {
+        height: 30px;
+    }    
+
+}
+@media (max-width: 411px) {
+
+    .logo img {
+        width: 20px;
+        height: auto;
+    }
+
+    .search-bar {
+        max-width: 75px; 
+        font-size: 0.55rem;
+        height: 1rem;
+        padding: 0.10rem;
+    }
+
+    .navbar {
+        gap: 0.15rem;
+    }
+
+    .navbar a {
+        padding: 5px;
+        font-size: 0.60rem;
+    }
+
+    .github {
+        margin-left: 0.75rem;
+    }
+
+    .github button {
+        font-size: 1rem;
+    }
+
+    .overview {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .logo-overview {
+        gap: 0.75rem;
+    }
+
+    .overview img {
+        height: 30px;
+    }
+    .overview h1 {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+    }
+    .overview p {
+        font-size: 0.75em;
+        padding: 0 0.75rem;
+    }
+}
+
 
  /* ---------------------Specific dimensions and colors for each item ----------------------------*/
 
@@ -394,5 +698,11 @@ html {
  .box157 { grid-row: span 11; background-color: #E4C087 }
  .box158 { grid-row: span 11; background-color: #AB886D }
  .box159 { grid-row: span 9; background-color: #FFF7D1 }
- /* ---------------------------------------------*/
+ /* -----------------React------------------------*/
+ .box160 { grid-row: span 8; background-color: #FFD2A0 }
+ .box161 { grid-row: span 9; background-color: #FFE6A9 }
+ .box162 { grid-row: span 9; background-color: #CB9DF0 }
+ .box163 { grid-row: span 5; background-color: #FFE3E3 }
+ .box164 { grid-row: span 6; background-color: #8967B3 }
+ .box165 { grid-row: span 5; background-color: #C0C78C }
 
