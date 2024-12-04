@@ -268,7 +268,7 @@ html {
     }
     .overview img {
         width: 75px;
-        height: 75px;
+        height: auto;
     }
     .overview h1 {
         font-size: 2rem;
@@ -384,7 +384,7 @@ html {
 
     .overview img {
         width: 50px;
-        height: 50px;
+        height: auto;
     }
     .overview h1 {
         font-size: 1.75rem;
@@ -405,7 +405,7 @@ html {
 
     .logo img {
         width: 30px;
-        height: 30px;
+        height: auto;
     }
     
     .logo {
@@ -441,8 +441,8 @@ html {
     }
 
     .overview img {
-        height: 40px;
-        width: auto;
+        height: auto;
+        width: 40px;
     }
     .overview h1 {
         font-size: 1.5rem;
@@ -510,7 +510,7 @@ html {
 
     .overview img {
         width: 30px;
-        height: 30px;
+        height: auto;
     }
     .overview h1 {
         font-size: 1.25rem;
