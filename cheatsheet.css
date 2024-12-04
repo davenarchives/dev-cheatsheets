@@ -395,10 +395,6 @@ html {
         padding: 0 2rem;
     }
 
-    .container {
-        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); /* Adjusts to fit 4 items per row */
-    }
-
     .box h1 {
         font-size: 1.25rem; 
         margin-bottom: 0.75rem; 
@@ -456,10 +452,6 @@ html {
         padding: 0 1rem;
     }
 
-    .container {
-        padding: 0 1.5rem;
-        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); /* Adjusts to fit 4 items per row */
-    }
 
     .overview {
         padding: 1.25rem;
@@ -526,10 +518,6 @@ html {
     .overview p {
         font-size: 0.75em;
         padding: 0 0.75rem;
-    }
-
-    .container {
-        padding: 0 1.25rem;
     }
 }
 

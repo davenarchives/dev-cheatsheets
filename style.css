@@ -644,23 +644,24 @@ hr {
     }
 
     .hero {
+        padding: 0 1rem;
         margin-top: 1.5rem;
         height: 40vh;
         width: 75%;
     }
 
     .hero img {
-        height: 25px;
+        height: 35px;
     }
 
     .hero h1 {
-        font-size: 0.75rem;
+        font-size: 0.95rem;
         margin-bottom: 0.25rem;
     }
     
     .hero p {
-        font-size: 0.65rem;
-        margin-bottom: 0.50rem;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
     }
 
     .hero-logo {
@@ -670,14 +671,14 @@ hr {
     .feature {
         margin: 0.1rem;
         padding: 0.5rem;
-        width: 50px;
+        width: 60px;
     }
 
     .feature h3 {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     .feature p {
-        font-size: 0.45rem;
+        font-size: 0.6rem;
     }
     
     .box {
