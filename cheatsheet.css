@@ -268,7 +268,7 @@ html {
     }
     .overview img {
         width: 75px;
-        height: auto;
+        height: 75px;
     }
     .overview h1 {
         font-size: 2rem;
@@ -309,7 +309,7 @@ html {
     .logo img {
         display: inline-block;
         width: 40px;
-        height: auto;
+        height: 40px;
     }
 
     .container {
@@ -346,7 +346,7 @@ html {
 
     .logo img {
         width: 40px;
-        height: auto;
+        height: 40px;
     }
     
     .logo {
@@ -384,7 +384,7 @@ html {
 
     .overview img {
         width: 50px;
-        height: auto;
+        height: 50px;
     }
     .overview h1 {
         font-size: 1.75rem;
@@ -405,7 +405,7 @@ html {
 
     .logo img {
         width: 30px;
-        height: auto;
+        height: 30px;
     }
     
     .logo {
@@ -442,6 +442,7 @@ html {
 
     .overview img {
         height: 40px;
+        width: auto;
     }
     .overview h1 {
         font-size: 1.5rem;
@@ -463,7 +464,7 @@ html {
 
     .overview img {
         width: 30px;
-        height: auto;
+        height: 30px;
     }    
 
 }
@@ -471,7 +472,7 @@ html {
 
     .logo img {
         width: 20px;
-        height: auto;
+        height: 20px;
     }
 
     .search-bar {
@@ -509,7 +510,7 @@ html {
 
     .overview img {
         width: 30px;
-        height: auto;
+        height: 30px;
     }
     .overview h1 {
         font-size: 1.25rem;
