@@ -268,7 +268,6 @@ html {
     }
     .overview img {
         width: 75px;
-        height: auto;
     }
     .overview h1 {
         font-size: 2rem;
@@ -309,7 +308,6 @@ html {
     .logo img {
         display: inline-block;
         width: 40px;
-        height: 40px;
     }
 
     .container {
@@ -384,7 +382,6 @@ html {
 
     .overview img {
         width: 50px;
-        height: auto;
     }
     .overview h1 {
         font-size: 1.75rem;
@@ -441,7 +438,6 @@ html {
     }
 
     .overview img {
-        height: auto;
         width: 40px;
     }
     .overview h1 {
@@ -510,7 +506,6 @@ html {
 
     .overview img {
         width: 30px;
-        height: auto;
     }
     .overview h1 {
         font-size: 1.25rem;
