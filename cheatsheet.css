@@ -708,4 +708,6 @@ html {
  .box173 { grid-row: span 8; background-color: #EFB6C8 }
  .box174 { grid-row: span 5; background-color: #89A8B2}
  .box175 { grid-row: span 6; background-color: #CDC1FF }
+ /* ----------------CSS------------------------*/
+ .box176 { grid-row: span 14; background-color: #ffffff }
 
