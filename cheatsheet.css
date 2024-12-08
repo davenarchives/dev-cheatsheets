@@ -710,5 +710,7 @@ html {
  .box173 { grid-row: span 8; background-color: #EFB6C8 }
  .box174 { grid-row: span 6; background-color: #89A8B2}
  .box175 { grid-row: span 6; background-color: #CDC1FF }
- /* ----------------CSS------------------------*/
+ /* ----------------PDF------------------------*/
+ .box176 { grid-row: span 6; background-color: #fff }
+ .box177 { grid-row: span 6; background-color: #fff }
 
