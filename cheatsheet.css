@@ -26,18 +26,18 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 5rem;
-    color: blue;
+    padding: 1.25rem 5rem;
     margin: 0;
     flex-wrap: wrap;
     background-color: transparent; /* Default background */
     transition: backdrop-filter 0.3s ease; /* Smooth transition for blur effect */
     backdrop-filter: none; /* No blur by default */
+    margin-bottom: 3.5rem;
 }
 
 .header.scrolled {
     backdrop-filter: blur(10px); /* Blur effect after scrolling */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle light grey shadow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle light grey shadow */
 }
 
 
@@ -51,12 +51,12 @@ html {
     display: inline;
     text-decoration: none !important;
     transition: transform 0.3s ease;
-    color: #00bcd4;
+    color: #000000;
     flex-shrink: 0;
 }
 
 .logo a:hover {
-    color: #5ba0aa;
+    color: #00bcd4;
     transform: scale(1.0075);
 }
 .logo img {
@@ -102,9 +102,8 @@ html {
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
-    border: 2px dashed transparent;
-    border-radius: 15px;
-    padding: 7px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
     box-sizing: border-box; 
     transition: background-color 0.3s ease; 
 }
@@ -115,6 +114,11 @@ html {
 
 .navbar a:hover {
     background-color: #00bcd4;
+    color: white;
+}
+
+.navbar a.active {
+    background-color: #2C65AE; 
     color: white;
 }
 
