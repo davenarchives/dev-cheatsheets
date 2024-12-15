@@ -272,7 +272,8 @@ html {
 
 .box:hover {
     transform: translateY(-10px);
-    background-color: #b3b3b3eb;
+    background-color: rgb(230, 247, 255);
+    border-color: #00bcd4;
 }
 
 .box img {
