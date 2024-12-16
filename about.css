@@ -166,11 +166,11 @@ html {
 .hero p {
     color: rgb(127, 127, 127);
     font-size: 1.25rem;
-    margin-bottom: 2rem;
     max-width: 55rem;       
     margin-left: auto;         
     margin-right: auto;
     margin-top: 1rem;
+    line-height: 1;
 }
 
 .hero-logo {
@@ -251,6 +251,7 @@ html {
 .container p {
     font-size: 1.25rem;
     color: rgb(127, 127, 127);
+    line-height: 1.5;
 }
 
 .container ul {
