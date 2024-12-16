@@ -194,8 +194,12 @@ html {
 
 .learn-more i {
     font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
 }
 
+.learn-more:hover i {
+    transform: translateX(8px); 
+}
 .hero-logo {
     display: flex;
     gap: 3rem;
