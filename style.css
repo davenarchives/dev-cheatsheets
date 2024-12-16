@@ -153,6 +153,12 @@ html {
     width: 90%;
     padding: 0 2rem;
 }
+
+.hero a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .hero h1 {
     margin-bottom: 1rem;
 }
@@ -249,7 +255,7 @@ html {
     flex-wrap: wrap; 
     gap: 2.5rem; 
     justify-content: flex-start; /* Align items to the left */
-    padding: 0 2rem; 
+    padding: 0 15rem; 
     max-width: 90%; /* Set a max width for the container */
     margin: 0 auto; /* Center the container */
 }
@@ -257,8 +263,8 @@ html {
 .box {
     background-color: #fff;
     position: relative; /* Set position to relative for the overlay */
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 175px;
     border: 2px solid black; 
     border-radius: 20px; 
     box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0); 
@@ -277,7 +283,7 @@ html {
 }
 
 .box img {
-    height: 150px; 
+    height: 100px; 
     max-width: 100%; 
     object-fit: contain; 
 }
@@ -292,7 +298,7 @@ html {
 }
 
 .divider .text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #333;
     text-transform: uppercase;

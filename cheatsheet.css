@@ -180,7 +180,7 @@ html {
     grid-auto-rows: 10px; /* Dynamic height rows */
     gap: 30px;
     margin-top: 3rem;
-    padding: 0 2rem;
+    padding: 2rem 15rem;
 }
 
 .box {
@@ -193,7 +193,7 @@ html {
     border: solid 0.125rem black;
     border-radius: 20px;
     box-shadow: 0.125rem 0.625rem 0.625rem rgb(0, 0, 0); 
-    background-color: #ff6f61; 
+    background-color: #ffffff; 
     transition: transform 0.3s;
     font-size: 1.2em;
     color: #fff;
@@ -540,12 +540,12 @@ html {
 .box3 { grid-row: span 9; background-color: #DEAA79; }
 .box4 { grid-row: span 7; background-color: #A6AEBF; }
 .box5 { grid-row: span 22; background-color: #CB9DF0; }
-.box6 { grid-row: span 9; background-color: #C6E7FF; }
+.box6 { grid-row: span 10; background-color: #C6E7FF; }
 .box7 { grid-row: span 12; background-color: #FFB38E; }
 .box8 { grid-row: span 11; background-color: #FFF6E3; }
 .box9 { grid-row: span 11; background-color: #FFB26F; }
 .box10 { grid-row: span 6; background-color: #789DBC; }
-.box11 { grid-row: span 20; background-color: #ECDFCC; }
+.box11 { grid-row: span 22; background-color: #ECDFCC; }
 .box12 { grid-row: span 13; background-color: #E5D9F2; }
 .box13 { grid-row: span 8; background-color: #FADFA1; }
 .box14 { grid-row: span 12; background-color: #FF8A8A; }
@@ -554,14 +554,14 @@ html {
 .box16 { grid-row: span 49; background-color: #F0DBAF; }
 .box17 { grid-row: span 13; background-color: #8E7AB5; }
 .box18 { grid-row: span 8; background-color: #7EACB5; }
-.box19 { grid-row: span 17; background-color: #E6D9A2; }
+.box19 { grid-row: span 18; background-color: #E6D9A2; }
 .box20 { grid-row: span 13; background-color: #A6B37D; }
 .box21 { grid-row: span 10; background-color: #86AB89; }
 .box22 { grid-row: span 7; background-color: #CBE2B5; }
-.box23 { grid-row: span 15; background-color: #F8EDE3; }
+.box23 { grid-row: span 16; background-color: #F8EDE3; }
 .box24 { grid-row: span 8; background-color: #F6EACB; }
-.box25 { grid-row: span 20; background-color: #F1D3CE; }
-.box26 { grid-row: span 13; background-color: #739072; }
+.box25 { grid-row: span 21; background-color: #F1D3CE; }
+.box26 { grid-row: span 14; background-color: #739072; }
 .box27 { grid-row: span 7; background-color: #D0BFFF; }
 .box28 { grid-row: span 6; background-color: #A0937D; }
 .box29 { grid-row: span 8; background-color: #BB9AB1; }
@@ -595,7 +595,7 @@ html {
  .box55 { grid-row: span 9; background-color: #A5B68D; }
  .box56 { grid-row: span 6; background-color: #C96868; }
  .box57 { grid-row: span 7; background-color: #FEF9D9; }
- .box58 { grid-row: span 27; background-color: #A6B37D; }
+ .box58 { grid-row: span 28; background-color: #A6B37D; }
  .box59 { grid-row: span 8; background-color: #FF8A8A; }
  .box60 { grid-row: span 8; background-color: #DFD3C3; }
  .box61 { grid-row: span 21; background-color: #C9DABF; }
