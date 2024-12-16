@@ -286,3 +286,10 @@ hr {
     margin: 0; /* Remove default margins */
 }
 
+footer {
+    text-align: center; 
+    padding: 1rem 0; 
+    background-color: #f8f8f8;
+    font-size: 1.25rem;
+    color: rgb(127, 127, 127);
+}
