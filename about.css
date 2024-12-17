@@ -205,6 +205,7 @@ html {
     width: 300px; /* Fixed width */
     height: 230px; /* Ensure equal height for consistency */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    aspect-ratio: 16 / 9;
 }
 
 .feature h3 {
@@ -294,3 +295,164 @@ footer {
     font-size: 1.25rem;
     color: rgb(127, 127, 127);
 }
+
+@media (max-width: 1440px) {
+    .container {
+      padding: 0 10rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .header {
+      padding: 1.25rem 4rem;
+    }
+  
+    .container {
+      padding: 0 5rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .header {
+      padding: 1.25rem 3rem;
+    }
+  
+    .navbar {
+      gap: 2rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.125rem;
+    }
+  
+    .container {
+      padding: 0 3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 1.25rem 2rem;
+    }
+  
+    .navbar {
+      gap: 1.5rem;
+    }
+  
+    .hero {
+      height: auto;
+      padding: 3rem 1.5rem;
+    }
+  
+    .hero-logo {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .container {
+      padding: 0 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header {
+      padding: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .search-container {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .search-bar {
+      max-width: 100%;
+    }
+  
+    .navbar {
+      width: 100%;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .github {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .container {
+      padding: 0 1rem;
+    }
+  }
+  
+  /* Ensure images and videos maintain aspect ratio */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Use aspect-ratio for other elements */
+  .feature {
+    aspect-ratio: 16 / 9;
+  }
+  
+  /* Use relative units for typography */
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Use CSS clamp for responsive font sizes */
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .hero p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  
+  

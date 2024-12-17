@@ -309,75 +309,41 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 20px; 
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: nowrap; 
 }
 
 hr {
-    flex-grow: 1; /* Make the line grow to fill the remaining space */
-    height: 2px; /* Line thickness */
-    background: #333; /* Line color */
-    border: none; /* Remove default border styling */
-    margin: 0; /* Remove default margins */
+    flex-grow: 1; 
+    height: 2px; 
+    background: #333;
+    border: none; 
+    margin: 0;
 }
 
 
-@media (max-width: 1200px) {
-    .header {
-      padding: 1.25rem 4rem;
-    }
-  
-    .hero h1 {
-      font-size: 3.5rem;
-    }
-  
+@media (max-width: 1440px) {
     .container {
       padding: 0 5rem;
     }
   }
   
-  /* Large devices (desktops, 992px and up) */
+  @media (max-width: 1200px) {
+    .header {
+      padding: 1.25rem 4rem;
+    }
+  
+    .container {
+      padding: 0 3rem;
+    }
+  }
+  
   @media (max-width: 992px) {
     .header {
       padding: 1.25rem 3rem;
     }
   
-    .logo a {
-      font-size: 1.4rem;
-    }
-  
     .navbar {
       gap: 2rem;
-    }
-  
-    .hero {
-      padding: 4rem 2rem;
-    }
-  
-    .hero h1 {
-      font-size: 3rem;
-    }
-  
-    .feature {
-      width: calc(50% - 1rem);
-    }
-  
-    .container {
-      padding: 0 4rem;
-    }
-  
-    .box {
-      width: calc(33.33% - 1.67rem);
-    }
-  }
-  
-  /* Medium devices (tablets, 768px and down) */
-  @media (max-width: 768px) {
-    .header {
-      padding: 1.25rem 2rem;
-    }
-  
-    .logo a {
-      font-size: 1.3rem;
     }
   
     .hero h1 {
@@ -385,7 +351,7 @@ hr {
     }
   
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.125rem;
     }
   
     .container {
@@ -393,14 +359,61 @@ hr {
     }
   
     .box {
-      width: calc(50% - 1.25rem);
+      height: 150px;
+      width: 150px;
     }
   }
   
-  /* Small devices (landscape phones, 576px and down) */
+  @media (max-width: 768px) {
+    .header {
+      padding: 1.25rem 2rem;
+    }
+  
+    .navbar {
+      gap: 1.5rem;
+    }
+  
+    .hero {
+      height: auto;
+      padding: 3rem 1.5rem;
+    }
+  
+    .hero-logo {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .container {
+      padding: 0 1.5rem;
+      justify-content: center;
+    }
+  }
+  
   @media (max-width: 576px) {
     .header {
       padding: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .search-container {
+      width: 100%;
+      margin-bottom: 1rem;
     }
   
     .search-bar {
@@ -408,13 +421,14 @@ hr {
     }
   
     .navbar {
+      width: 100%;
       flex-direction: column;
       gap: 1rem;
     }
   
-    .hero {
-      height: auto;
-      padding: 2rem 1rem;
+    .github {
+      margin-left: 0;
+      margin-top: 1rem;
     }
   
     .hero h1 {
@@ -425,22 +439,67 @@ hr {
       font-size: 1rem;
     }
   
-    .features {
-      flex-direction: column;
-    }
-  
-    .feature {
-      width: 100%;
-    }
-  
     .container {
       padding: 0 1rem;
     }
   
     .box {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1 / 1;
+      height: 125px;
+      width: 125px;
     }
   }
+  
+  /* Ensure images and videos maintain aspect ratio */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Use aspect-ratio for other elements */
+  .box {
+    aspect-ratio: 1 / 1;
+  }
+  
+  /* Use relative units for typography */
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Use CSS clamp for responsive font sizes */
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .hero p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  
+  /* Ensure flexbox layout adjusts properly on smaller screens */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .box {
+    flex: 0 0 auto;
+  }
+  
   
