@@ -287,10 +287,31 @@ html {
     border-color: #00bcd4;
 }
 
+.box .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.box:hover .hover-text {
+  opacity: 1;
+}
+
 .box img {
     height: 100px; 
     max-width: 100%; 
     object-fit: contain; 
+    transition: all 0.3 ease;
+}
+
+.box:hover img {
+  filter: blur(3px);
 }
 
 /* -----------------------------------Categories Divider-------------------------------------------*/
