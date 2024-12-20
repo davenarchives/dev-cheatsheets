@@ -9,14 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to set active link
   const setActiveLink = (hash) => {
+    const activeHash = hash || '#home'; // Default to '#home' if no hash is provided
     navbarLinks.forEach(link => {
-      const isActive = link.getAttribute('href') === hash;
+      const isActive = link.getAttribute('href') === activeHash;
       link.classList.toggle('active', isActive); // Add/remove 'active' class
     });
   };
 
   // Set initial active state based on the URL hash
-  setActiveLink(window.location.hash || '#');
+  setActiveLink(window.location.hash);
 
   // Add smooth scrolling and active link management
   navbarLinks.forEach(link => {
@@ -38,6 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Update active link on history navigation
   window.addEventListener('popstate', () => {
-    setActiveLink(window.location.hash || '#');
+    setActiveLink(window.location.hash);
   });
 });
