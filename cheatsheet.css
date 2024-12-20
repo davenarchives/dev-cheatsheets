@@ -232,6 +232,13 @@ html {
     display: block;
 }
 
+.box ul li a p {
+  color: rgb(127, 127, 127);
+  text-indent: 10px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
 .box ul li a:hover {
     color: #0056b3;
     background-color: #00bcd4;
@@ -428,19 +435,10 @@ html {
  .box173 { grid-row: span 8; background-color: #EFB6C8 }
  .box174 { grid-row: span 6; background-color: #89A8B2}
  .box175 { grid-row: span 6; background-color: #CDC1FF }
- /* ----------------PDF------------------------*/
- .box176 { grid-row: span 6; background-color: #C1BAA1 }
- .box177 { grid-row: span 4; background-color: #89A8B2 }
- .box178 { grid-row: span 6; background-color: #B1C29E }
- .box179 { grid-row: span 7; background-color: #CDC1FF }
- .box180 { grid-row: span 6; background-color: #FFECC8 }
- .box181 { grid-row: span 5; background-color: #A1D6B2 }
- .box182 { grid-row: span 5; background-color: #CCD5AE }
- .box183 { grid-row: span 6; background-color: #F6E6CB }
- .box184 { grid-row: span 7; background-color: #FFC6C6 }
- .box185 { grid-row: span 5; background-color: #95D2B3 }
- .box186 { grid-row: span 6; background-color: #EDE8DC }
- .box187 { grid-row: span 4; background-color: #C9DABF }
+ /* ----------------Linux------------------------*/
+ .box176 { grid-row: span 26; background-color: #ffffff }
+ .box177 { grid-row: span 16; background-color: #ffffff }
+
 
  @media (max-width: 1440px) {
   .container {
@@ -560,41 +558,41 @@ html {
   }
 
 
-
-
 /* Use relative units for typography */
-html {
-  font-size: 16px;
-}
+  html {
+    font-size: 16px;
+  }
 
-body {
-  font-size: 1rem;
-}
+  body {
+    font-size: 1rem;
+  }
 
-h1 {
-  font-size: 2rem;
-}
+  h1 {
+    font-size: 2rem;
+  }
 
-h2 {
-  font-size: 1.5rem;
-}
+  h2 {
+    font-size: 1.5rem;
+  }
 
-h3 {
-  font-size: 1.25rem;
-}
+  h3 {
+    font-size: 1.25rem;
+  }
 
-/* Use CSS clamp for responsive font sizes */
-.hero h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-}
+  /* Use CSS clamp for responsive font sizes */
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
 
-.hero p {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-}
+  .hero p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
 
-/* Ensure flexbox layout adjusts properly on smaller screens */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-} 
+  /* Ensure flexbox layout adjusts properly on smaller screens */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+}
