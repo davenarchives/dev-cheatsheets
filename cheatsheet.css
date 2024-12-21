@@ -438,6 +438,11 @@ html {
  /* ----------------Linux------------------------*/
  .box176 { grid-row: span 26; background-color: #ffffff }
  .box177 { grid-row: span 16; background-color: #ffffff }
+ .box178 { grid-row: span 10; background-color: #ffffff }
+ .box179 { grid-row: span 10; background-color: #ffffff }
+ .box180 { grid-row: span 15; background-color: #ffffff }
+ .box181 { grid-row: span 18; background-color: #ffffff }
+ .box182 { grid-row: span 17; background-color: #ffffff }
 
 
  @media (max-width: 1440px) {
