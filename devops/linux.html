@@ -169,6 +169,102 @@
                 <li><a>sudo usermod -a -G GROUPNAME USERNAME<p> Add an existing user to the specified group. The user is added to the group without removing them from their current groups.</p></a></li>
             </ul>
         </div>
+        <div class="box box186">
+            <h1>Search Files</h1>
+            <ul>
+                <li><a>grep pattern files<p>Search for pattern in files</p></a></li>
+                <li><a>grep -i<p>Case insens­itive search</p></a></li>
+                <li><a>grep -r<p>Recursive search</p></a></li>
+                <li><a>grep -v<p>Inverted search</p></a></li>
+                <li><a>grep -o<p>Show matched part of file only</p></a></li>
+                <li><a>find /dir/ -name name*<p>Find files starting with name in dir</p></a></li>
+                <li><a>find /dir/ -user name<p>Find files owned by name in dir</p></a></li>
+                <li><a>find /dir/ -mmin num<p>Find files modifed less than num minutes ago in dir</p></a></li>
+                <li><a>whereis command<p>Find binary / source / manual for command</p></a></li>
+                <li><a>locate file<p>Find file (quick search of system index)</p></a></li>
+            </ul>
+        </div>
+        <div class="box box187">
+            <h1>Bash Shortcuts</h1>
+            <ul>
+                <li><a>Ctrl + A<p>Move to the beginning of the line.</p></a></li>
+                <li><a>Ctrl + E<p>Move to the end of the line.</p></a></li>
+                <li><a>Ctrl + B<p>Move back one character.</p></a></li>
+                <li><a>Ctrl + F<p>Move forward one character.</p></a></li>
+                <li><a>Alt + B<p>Move back one word.</p></a></li>
+                <li><a>Alt + F<p>Move forward one word.</p></a></li>
+                <li><a>Ctrl + U<p>Cut/delete from the cursor position to the beginning of the line.</p></a></li>
+                <li><a>Ctrl + K<p>Cut/delete from the cursor position to the end of the line.</p></a></li>
+                <li><a>Ctrl + W<p>Cut/delete the word before the cursor.</p></a></li>
+                <li><a>Ctrl + Y<p>Paste the last cut text.</p></a></li>
+                <li><a>Ctrl + L	<p>Clear the screen.</p></a></li>
+                <li><a>Ctrl + R<p>Search command history (reverse search).</p></a></li>
+                <li><a>Ctrl + G<p>Escape from history search mode.</p></a></li>
+                <li><a>Ctrl + P<p> Go to the previous command in history.</p></a></li>
+                <li><a>Ctrl + N<p>Go to the next command in history.</p></a></li>
+                <li><a>Ctrl + C<p>Terminate the current command.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box188">
+            <h1>Nano Shortcuts</h1>
+            <ul>
+                <li><a>Ctrl + O<p> Save the file.</p></a></li>
+                <li><a>Ctrl + X<p>Exit Nano (prompt to save if modified).	</p></a></li>
+                <li><a>Ctrl + R<p>Read a file into the current buffer.</p></a></li>
+                <li><a>Ctrl + J<p>Justify the current paragraph.</p></a></li>
+                <li><a>Ctrl + Y<p>Scroll up one page.</p></a></li>
+                <li><a>Ctrl + V<p>Scroll down one page.</p></a></li>
+                <li><a>Alt + \<p>Go to a specific line number.</p></a></li>
+                <li><a>Alt + ,<p> Go to the beginning of the current line.	</p></a></li>
+                <li><a>Alt + .<p>Go to the end of the current line.</p></a></li>
+                <li><a>Ctrl + K<p>Cut/delete from the cursor position to the end of the line.</p></a></li>
+                <li><a>Ctrl + U<p>Uncut/restore the last cut text.</p></a></li>
+                <li><a>Ctrl + 6<p>Mark a block of text for copying or cutting.</p></a></li>
+                <li><a>Ctrl + K<p>Cut/delete the marked block of text.</p></a></li>
+                <li><a>Alt + 6<p>Copy the marked block of text.	</p></a></li>
+                <li><a>Ctrl + W<p>Search for a string in the text.</p></a></li>
+                <li><a>Alt + W<p>Search and replace a string in the text.</p></a></li>
+                <li><a>Alt + R<p>Repeat the last search.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box189">
+            <h1>VI Shortcuts</h1>
+            <ul>
+                <li><a>cw<p>Change the current word. Deletes from the cursor position to the end of the current word and switches to insert mode.</p></a></li>
+                <li><a>dd<p>Delete the current line.</p></a></li>
+                <li><a>x<p>Delete the character under the cursor.</p></a></li>
+                <li><a>R<p>Enter replace mode. Overwrites characters starting from the cursor position until you press the Escape key.</p></a></li>
+                <li><a>o<p>Insert a new line below the current line and switch to insert mode.</p></a></li>
+                <li><a>u<p>Undo the last change.</p></a></li>
+                <li><a>s<p>Substitute the character under the cursor and switch to insert mode.</p></a></li>
+                <li><a>dw<p>Delete from the cursor position to the beginning of the next word.</p></a></li>
+                <li><a>D<p>Delete from the cursor position to the end of the line.</p></a></li>
+                <li><a>4dw<p>Delete the next four words from the cursor position.</p></a></li>
+                <li><a>A<p>Switch to insert mode at the end of the current line.</p></a></li>
+                <li><a>S<p>Delete the current line and switch to insert mode.</p></a></li>
+                <li><a>r<p>Replace the character under the cursor with a new character entered from the keyboard.</p></a></li>
+                <li><a>i<p>Switch to insert mode before the cursor.</p></a></li>
+                <li><a>3dd<p>Delete the current line and the two lines below it.</p></a></li>
+                <li><a>ESC<p>Exit from insert or command-line mode and return to command mode.</p></a></li>
+                <li><a>U<p>Restore the current line to its original state before any changes were made.</p></a></li>
+                <li><a>~<p>Switch the case of the character under the cursor.</p></a></li>
+                <li><a>a<p>Switch to insert mode after the cursor.</p></a></li>
+                <li><a>C<p>Delete from the cursor position to the end of the line and switch to insert mode.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box190">
+            <h1>Vim Shortcuts</h1>
+            <ul>
+                <li><a>i<p>Enter insert mode at the current cursor position.</p></a></li>
+                <li><a>x<p>Delete the character under the cursor.</p></a></li>
+                <li><a>dd<p>Delete the current line.</p></a></li>
+                <li><a>yy<p>Copy the current line.</p></a></li>
+                <li><a>p<p>Paste the copied or deleted text below the current line.</p></a></li>
+                <li><a>u<p>Undo the last change.</p></a></li>
+                <li><a>Ctrl + R<p>Redo the last undo.</p></a></li>
+            </ul>
+        </div>
+
     </div>
     <script src="../script.js"></script>  
     <script src="../headerscroller.js"></script>
