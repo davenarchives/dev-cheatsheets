@@ -128,12 +128,45 @@
                 <li><a href="https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/" target="_blank">curl<p>Transfer data to or from a server.</p></a></li>
             </ul>
         </div>
-        <div class="box box#">
-            <h1></h1>
+        <div class="box box183">
+            <h1>IO Redirection</h1>
             <ul>
-                <li><a href="" target="_blank"></a></li>
-                <li><a href="" target="_blank"></a></li>
-                <li><a href="" target="_blank"></a></li>
+                <li><a>cmd &lt file<p>Input of cmd is taken from file.</p></a></li>
+                <li><a>cmd &gt file<p>Standard output (stdout) of cmd is redirected to file.</p></a></li>
+                <li><a>cmd 2&gt file<p>Error output (stderr) of cmd is redirected to file.</p></a></li>
+                <li><a>cmd 2&gt&1<p>stderr is redirected to the same place as stdout.</p></a></li>
+                <li><a>cmd1 &lt(cmd2)<p>Output of cmd2 is used as the input file for cmd1.</p></a></li>
+                <li><a>cmd &gt /dev/null<p> Discards the stdout of cmd by sending it to the null device.</p></a></li>
+                <li><a>cmd &&gt file<p>Every output of cmd is redirected to file.</p></a></li>
+                <li><a>cmd 1&gt&2<p>stdout is redirected to the same place as stderr.</p></a></li>
+                <li><a>cmd &gt&gt file<p>Appends the stdout of cmd to file.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box184">
+            <h1>Environment Variable</h1>
+            <ul>
+                <li><a>export VARIABLE_NAME=value<p>Sets the value of an environment variable.</p></a></li>
+                <li><a>echo $VARIABLE_NAME<p>Displays the value of a specific environment variable.</p></a></li>
+                <li><a>env<p>Lists all environment variables currently set in the system.</p></a></li>
+                <li><a>unset VARIABLE_NAME<p>Unsets or removes an environment variable.</p></a></li>
+                <li><a>export -p<p>Shows a list of all currently exported environment variables.</p></a></li>
+                <li><a>env VAR1=value COMMAND<p>Sets the value of an environment variable for a specific command.</p></a></li>
+                <li><a>printenv<p>Displays the values of all environment variables.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box185">
+            <h1>User Management</h1>
+            <ul>
+                <li><a>who<p>Show who is currently logged in.</p></a></li>
+                <li><a>sudo adduser username<p>Create a new user account on the system with the specified username.</p></a></li>
+                <li><a>finger<p>Display information about all the users currently logged into the system, including their usernames, login time, and terminal.</p></a></li>
+                <li><a>sudo deluser USER GROUPNAME<p>Remove the specified user from the specified group.</p></a></li>
+                <li><a>last<p>Show the recent login history of users.</p></a></li>
+                <li><a>finger username<p>Provide information about the specified user, including their username, real name, terminal, idle time, and login time.</p></a></li>
+                <li><a>sudo userdel -r username<p>Delete the specified user account from the system, including their home directory and associated files. The -r option ensures the removal of the user’s files.</p></a></li>
+                <li><a>sudo passwd -l username<p>Lock the password of the specified user account, preventing the user from logging in.</p></a></li>
+                <li><a>su – username<p>Switch to another user account with the user’s environment.</p></a></li>
+                <li><a>sudo usermod -a -G GROUPNAME USERNAME<p> Add an existing user to the specified group. The user is added to the group without removing them from their current groups.</p></a></li>
             </ul>
         </div>
     </div>

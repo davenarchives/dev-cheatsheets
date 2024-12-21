@@ -234,7 +234,7 @@ html {
 
 .box ul li a p {
   color: rgb(127, 127, 127);
-  text-indent: 10px;
+  margin: 0 1rem;
   font-style: italic;
   margin-top: 5px;
 }
@@ -443,6 +443,9 @@ html {
  .box180 { grid-row: span 15; background-color: #ffffff }
  .box181 { grid-row: span 18; background-color: #ffffff }
  .box182 { grid-row: span 17; background-color: #ffffff }
+ .box183 { grid-row: span 20; background-color: #ffffff }
+ .box184 { grid-row: span 19; background-color: #ffffff }
+ .box185 { grid-row: span 32; background-color: #ffffff }
 
 
  @media (max-width: 1440px) {
