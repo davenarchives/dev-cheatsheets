@@ -245,6 +245,14 @@ html {
     border-radius: 5px; 
 }
 
+hr {
+  flex-grow: 1; 
+  height: 2px; 
+  background: #333;
+  border: none; 
+  margin: 0;
+  margin-bottom: 10px;
+}
  /* ---------------------Specific dimensions and colors for each item ----------------------------*/
 
  /* -------------Javascript----------------*/
@@ -289,7 +297,7 @@ html {
 .box38 { grid-row: span 7; background-color: #F2C18D; }
  /* -------------Git------------------*/
  .box39 { grid-row: span 8; background-color: #E0E5B6; }
- .box40 { grid-row: span 13; background-color: #D1BB9E; }
+ .box40 { grid-row: span 14; background-color: #D1BB9E; }
  .box41 { grid-row: span 8; background-color: #F2C18D; }
  .box42 { grid-row: span 6; background-color: #C5EBAA; }
  .box43 { grid-row: span 7; background-color: #EADBC8; }
@@ -436,21 +444,22 @@ html {
  .box174 { grid-row: span 6; background-color: #89A8B2}
  .box175 { grid-row: span 6; background-color: #CDC1FF }
  /* ----------------Linux------------------------*/
- .box176 { grid-row: span 26; background-color: #C1BAA1 }
- .box177 { grid-row: span 16; background-color: #B3C8CF }
- .box178 { grid-row: span 10; background-color: #FFE6A9 }
- .box179 { grid-row: span 10; background-color: #BFECFF }
- .box180 { grid-row: span 15; background-color: #F0C1E1 }
- .box181 { grid-row: span 18; background-color: #789DBC }
- .box182 { grid-row: span 17; background-color: #F5F5F7 }
- .box183 { grid-row: span 20; background-color: #B7B7B7 }
- .box184 { grid-row: span 19; background-color: #a4ddca }
- .box185 { grid-row: span 32; background-color: #C1CFA1 }
- .box186 { grid-row: span 19; background-color: #d3a9a9 }
- .box187 { grid-row: span 29; background-color: #FF8A8A }
- .box188 { grid-row: span 30; background-color: #BC9F8B }
- .box189 { grid-row: span 46; background-color: #d7d948 }
- .box190 { grid-row: span 14; background-color: #b4a8b0 }
+ .box176 { grid-row: span 26; background-color: #f6f6f6 }
+ .box177 { grid-row: span 16; background-color: #ffffff }
+ .box178 { grid-row: span 10; background-color: #ffffff }
+ .box179 { grid-row: span 10; background-color: #ffffff }
+ .box180 { grid-row: span 15; background-color: #ffffff }
+ .box181 { grid-row: span 18; background-color: #ffffff }
+ .box182 { grid-row: span 17; background-color: #ffffff }
+ .box183 { grid-row: span 20; background-color: #ffffff }
+ .box184 { grid-row: span 19; background-color: #ffffff }
+ .box185 { grid-row: span 32; background-color: #ffffff }
+ .box186 { grid-row: span 19; background-color: #ffffff }
+ .box187 { grid-row: span 29; background-color: #ffffff }
+ .box188 { grid-row: span 30; background-color: #ffffff }
+ .box189 { grid-row: span 46; background-color: #ffffff }
+ .box190 { grid-row: span 14; background-color: #ffffff }
+ /* ----------------Docker------------------------*/
 
 
  @media (max-width: 1440px) {
