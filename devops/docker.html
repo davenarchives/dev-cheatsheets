@@ -42,8 +42,74 @@
 
     <div class="container">
         <div class="box box191">
+            <h1>Run a new Container</h1>
+            <ul>
+                <hr>
+                <li><a>docker run IMAGE<br>docker run nginx<p>Start a new Container from an image</p></a></li>
+                <li><a>docker run --name CONTAINER IMAGE<br>docker run --name web nginx<p>...and assign it a name</p></a></li>
+                <li><a>docker run -p HOSTPORT: CONTAINERPORT IMAGE<br>docker run -p 8080:80 nginx<p>...and map a port</p></a></li>
+                <li><a>docker run -p IMAGE<br>docker run -p nginx<p>...and map all ports</p></a></li>
+                <li><a>docker run -d IMAGE<br>docker run -d nginx<p>..and start container in background</p></a></li>
+                <li><a>docker run --hostname HOSTNAME IMAGE<br>docker run --hostname srv nginx<p>...and assign it a hostname</p></a></li>
+                <li><a>docker run --add-host HOSTNAME:IP IMAGE<p>...and add a dns entry</p></a></li>
+                <li><a>docker run -v HOSTDIR:TARGETDIR IMAGE<br>docker run -v ~/:/usr/share/nginx/html nginx<p>...and map a local directory into the container</p></a></li>
+                <li><a>docekr run -it --entrypoint EXECUTABLE IMAGE<br>docker run -it --entrypoint bash nginx<p>...but change the entrypoint</p></a></li>
+            </ul>
+        </div>
+        <div class="box box192">
+            <h1>Manage Containers</h1>
+            <ul>
+                <hr>
+                <li><a>docker ps<p>Show a list of running containers</p></a></li>
+                <li><a>docker ps -a<p>Show a list of all containers</p></a></li>
+                <li><a>docker rm CONTAINER<br>docker rm web<p>Delete a container</p></a></li>
+                <li><a>docker rm -f CONTAINER<br>docker rm -f web<p>Delete a running container</p></a></li>
+                <li><a>docker container prune<p>Delete stopped containers</p></a></li>
+                <li><a>docker stop CONTAINER<br>docker stop web<p>Stop a running container</p></a></li>
+                <li><a>docker start CONTAINER<br>docker start web<p>Start a stopped container</p></a></li>
+                <li><a>docker cp CONTAINER: SOURCE TARGET<br>docker cp web:/index.html index.html<p>Copy a file from a container to the host</p></a></li>
+                <li><a>docker cp TARGET CONTAINER: SOURCE<br>docker cp index.html web:/index.html<p>Copt a file from the host to a container</p></a></li>
+                <li><a>docker exec -it CONTAINER EXECUTABLE<br>docker exec -it web bash<p>Start a shell inside a running container</p></a></li>
+                <li><a>docker rename OLD_NAME NEW_NAME<br>docker rename 096 web<p>Rename a container</p></a></li>
+                <li><a>docker commit container<br>docker commit web<p>Create an image out of container</p></a></li>
+            </ul>
+        </div>
+        <div class="box box193">
+            <h1>Manage Images</h1>
+            <ul>
+                <hr>
+                <li><a>docker pull IMAGE[:TAG]<br>docker pull nginx<p>Download an image</p></a></li>
+                <li><a>docker push IMAGE<br>docker push myimage:1.0<p>Upload an image to a repository</p></a></li>
+                <li><a>docker rmi IMAGE<p>Delete an image</p></a></li>
+                <li><a>docker images<p>Show a list of all images</p></a></li>
+                <li><a>docker image prune<p>Delete dangling images</p></a></li>
+                <li><a>docker image prune -a<p>Delete all unused images</p></a></li>
+                <li><a>docker build DIRECTORY<br>docker build .<p>Build an image from a Dockerfile</p></a></li>
+                <li><a>docker tag IMAGE NEWIMAGE<br>docker tag ubuntu ubuntu:18.04<p>Tag an image</p></a></li>
+                <li><a>docker build -t IMAGE DIRECTORY<br>docker build -t myimage .<p>Build and tag an image from a Dockerfile</p></a></li>
+                <li><a>docker save IMAGE > FILE<br>docker save nginx > nginx.tar<p>Save an image to tar file</p></a></li>
+                <li><a>docker load -i TARFILE<br>docker laod -i nginx.tar<p>Load an image from a tar file</p></a></li>
+                <li><a><p></p></a></li>
+                <li><a><p></p></a></li>
+            </ul>
+        </div>
+        <div class="box box194">
+            <h1>Info & Stats</h1>
+            <ul>
+                <hr>
+                <li><a>docker logs CONTAINER<br>docker logs web<p>Show the logs of a container</p></a></li>
+                <li><a>docker stats<p>Show stats of running containers</p></a></li>
+                <li><a>docker top CONTAINER<br>docker top web<p>Show processes of container</p></a></li>
+                <li><a>docker version<p>Show installed docker version</p></a></li>
+                <li><a>docker inspect NAME<br>docker inspect nginx<p>Get detailed info about an object</p></a></li>
+                <li><a>docker diff CONTAINER<br>docker diff web<p>Show all modifed files in container</p></a></li>
+                <li><a>docker port CONTAIER<br>docker port web<p>Show mapped ports of a container</p></a></li>
+            </ul>
+        </div>
+        <div class="box box#">
             <h1>Coming soon!</h1>
             <ul>
+                <hr>
                 <li><a><p></p></a></li>
                 <li><a><p></p></a></li>
                 <li><a><p></p></a></li>
@@ -53,42 +119,7 @@
         <div class="box box#">
             <h1>Coming soon!</h1>
             <ul>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-            </ul>
-        </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
-            <ul>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-            </ul>
-        </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
-            <ul>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-            </ul>
-        </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
-            <ul>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-            </ul>
-        </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
-            <ul>
+                <hr>
                 <li><a><p></p></a></li>
                 <li><a><p></p></a></li>
                 <li><a><p></p></a></li>

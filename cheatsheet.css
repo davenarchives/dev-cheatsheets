@@ -460,6 +460,10 @@ hr {
  .box189 { grid-row: span 46; background-color: #ffffff }
  .box190 { grid-row: span 14; background-color: #ffffff }
  /* ----------------Docker------------------------*/
+ .box191 { grid-row: span 26; background-color: #ffffff }
+ .box192 { grid-row: span 30; background-color: #ffffff }
+ .box193 { grid-row: span 26; background-color: #ffffff }
+ .box194 { grid-row: span 17; background-color: #ffffff }
 
 
  @media (max-width: 1440px) {
