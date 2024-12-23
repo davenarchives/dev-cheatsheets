@@ -299,6 +299,7 @@
         <div class="box box213">
             <h1>Useful NULL functions</h1>
             <ul>
+                <hr>
                 <li><a>SELECT name
                     FROM city
                     WHERE rating IS NOT NULL;<p>To fetch the names of the cities whose rating values are not missing</p></a></li>
@@ -307,6 +308,7 @@
         <div class="box box214">
             <h1>COALESCE</h1>
             <ul>
+                <hr>
                 <li><a>SELECT domain,
                     COALESCE(domain, 'domain missing')
                    FROM contacts;<p>To replace NULL in a query with something meaningful</p></a></li>
@@ -315,6 +317,7 @@
         <div class="box box214">
             <h1>NULLIF</h1>
             <ul>
+                <hr>
                 <li><a>SELECT last_month, this_month,
                     this_month * 100.0 / NULLIF(last_month, 0) AS better_by_percent
                   FROM video_views;<p>To save yourself from division by 0 errors</p></a></li>
@@ -323,6 +326,7 @@
         <div class="box box215">
             <h1>Date and time</h1>
             <ul>
+                <hr>
                 <li><a>DATE<p>a date with a resolution of one day; stores the year, month, and day in the YYYY-MM-DD format.</p></a></li>
                 <li><a>TIME<p> a time of day with a resolution of one microsecond; stores the hours, minutes, seconds, and fractional seconds in the HH:MM:SS.SSSSSS format.</p></a></li>
                 <li><a>TIMESTAMP WITH TIME ZONE<p>a timestamp with the time zone; stores the date and the time along with the corresponding time zone information. The range is from '4713-11-24 00:00:00' BC to '294276-12-31 23:59:59' AD.</p></a></li>
@@ -333,6 +337,7 @@
         <div class="box box216">
             <h1>What time is it?</h1>
             <ul>
+                <hr>
                 <li><a>CURRENT_TIME<p>to get the current time.</p></a></li>
                 <li><a>CURRENT_DATE<p>to get the current date.</p></a></li>
                 <li><a>CURRENT_TIMESTAMP<p>to get the current timestamp with both of the above.</p></a></li>
@@ -341,6 +346,7 @@
         <div class="box box217">
             <h1>Creating date/time values</h1>
             <ul>
+                <hr>
                 <li><a>SELECT '2023-12-31'::date;<br>SELECT '15:31'::time;<br>SELECT '2023-12-31 23:59:29'::timestamp;<p>To create a date, time, or datetime value, write it as a string and cast it to the desired type.</p></a></li>
                 <li><a>SELECT airline, flight_number, departure_time
                     FROM airport_schedule
@@ -353,6 +359,7 @@
         <div class="box box218">
             <h1>Intervals</h1>
             <ul>
+                <hr>
                 <li><a>INTERVAL '1 year' + INTERVAL '3 months'<p>An interval is the duration between two points in time.
 
                     <br><br>To define an interval: INTERVAL '3 days'
@@ -365,6 +372,7 @@
         <div class="box box219">
             <h1>Extracting parts of dates</h1>
             <ul>
+                <hr>
                 <li><a>SELECT EXTRACT(MONTH FROM '2023-12-31'::DATE);
                     <br>-- result: 12<p>To extract a part of a date, use EXTRACT()</p></a></li>
                 <li><a>SELECT DATE_PART('day', '2023-12-31'::DATE); 
@@ -374,6 +382,7 @@
         <div class="box box220">
             <h1>Date arithmetics</h1>
             <ul>
+                <hr>
                 <li><a>SELECT '2023-10-31'::DATE + INTERVAL '2 months';
                     <br>-- result: '2023-12-31'
                     <br><br>SELECT '2024-04-05'::DATE + INTERVAL '-3 days';
