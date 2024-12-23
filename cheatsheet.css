@@ -464,6 +464,15 @@ hr {
  .box192 { grid-row: span 30; background-color: #ffffff }
  .box193 { grid-row: span 26; background-color: #ffffff }
  .box194 { grid-row: span 17; background-color: #ffffff }
+ /* ----------------PostgreSQL------------------------*/
+ .box195 { grid-row: span 20; background-color: #ffffff }
+ .box196 { grid-row: span 14; background-color: #ffffff }
+ .box197 { grid-row: span 15; background-color: #ffffff }
+ .box198 { grid-row: span 17; background-color: #ffffff }
+ .box199 { grid-row: span 12; background-color: #ffffff }
+ .box200 { grid-row: span 10; background-color: #ffffff }
+
+
 
 
  @media (max-width: 1440px) {

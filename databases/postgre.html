@@ -41,44 +41,96 @@
 <!----------------------------Main Content---------------------------------------->
 
     <div class="container">
-        <div class="box box#">
-            <h1>Coming soon!</h1>
+        <div class="box box195">
+            <h1>Connecting to a PostgreSQL server</h1>
             <ul>
                 <hr>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
+                <li><a>psql -U username<p>Connect to a PostgreSQL server using the PostgreSQL command-line client (psql) and a username. It will prompt you for the password</p></a></li>
+                <li><a>psql -U username -h host_name -d database_name<p>To connect to a specific database on a PostgreSQL server with a username</p></a></li>
+                <li><a>\q<p>To exit the client</p></a></li>
+                <li><a>\h<p>For a full list of commands</p></a></li>
+                <li><a>\?<p>For a list of psql commands</p></a></li>
+                <li><a>pg_dump -U username -h host_name -d database_name > data_backup.sql<p>To export data using the pg_dump tool</p></a></li>
             </ul>
         </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
+        <div class="box box196">
+            <h1>Creating and displaying databases</h1>
             <ul>
                 <hr>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
+                <li><a>CREATE DATABASE zoo;<p>To create a database</p></a></li>
+                <li><a>DROP DATABASE zoo;<p>To delete a specific database</p></a></li>
+                <li><a>\l;<p>To list all the databases on a server</p></a></li>
+                <li><a>\c zoo;<p>To connect to a specific database</p></a></li>
+                <li><a>\dt;<p>To list all tables in a database</p></a></li>
+                <li><a>\d animal;<p>To get information about a specific table</p></a></li>
             </ul>
         </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
+        <div class="box box197">
+            <h1>Creating tables</h1>
             <ul>
                 <hr>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
+                <li><a>CREATE TABLE habitat (
+                    id INT,
+                    name VARCHAR(64)
+                  );<p>To create a table</p></a></li>
+                <li><a>CREATE TABLE habitat (
+                    id INT SERIAL PRIMARY KEY,
+                    name VARCHAR(64)
+                  );<p>To increment the ID automatically with each new record, use the SERIAL data type</p></a></li>
+                <li><a>CREATE TABLE animal (
+                    id SERIAL PRIMARY KEY,
+                    name VARCHAR(64),
+                    species VARCHAR(64),
+                    age INT,
+                    habitat_id INT,
+                    FOREIGN KEY (habitat_id)
+                        REFERENCES habitat(id)
+                  );<p>To create a table with a foreign key</p></a></li>
             </ul>
         </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
+        <div class="box box198">
+            <h1>Modifying tables</h1>
             <ul>
                 <hr>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
+                <li><a>ALTER TABLE animal RENAME TO pet;<p>To change a table name</p></a></li>
+                <li><a>ALTER TABLE animal
+                    ADD COLUMN name VARCHAR(64);
+                    <p>To add a column to the table</p></a></li>
+                <li><a>ALTER TABLE animal
+                    RENAME COLUMN id TO identifier;<p>To change a column name</p></a></li>
+                <li><a>ALTER TABLE animal
+                    ALTER COLUMN name TYPE VARCHAR(128);
+                    <p>To change a column data type</p></a></li>
+                <li><a>ALTER TABLE animal
+                    DROP COLUMN name;<p>To delete a column</p></a></li>
+                <li><a>DROP TABLE animal;<p>To delete a table</p></a></li>
+            </ul>
+        </div>
+        <div class="box box199">
+            <h1>Querying data</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT species, AVG(age) AS average_age
+                    FROM animal
+                    WHERE id != 3
+                    GROUP BY species
+                    HAVING AVG(age) > 3
+                    ORDER BY AVG(age) DESC;<p>An example of a single-table query</p></a></li>
+                <li><a>SELECT city.name, country.name
+                    FROM city
+                    [INNER | LEFT | RIGHT | FULL] JOIN country
+                      ON city.country_id = country.id;<p>An example of a multiple-table query</p></a></li>
+            </ul>
+        </div>
+        <div class="box box200">
+            <h1>Inserting data</h1>
+            <ul>
+                <hr>
+                <li><a>INSERT INTO habitat VALUES
+                    (1, 'River'),
+                    (2, 'Forest');<p>To insert data into a table, use INSERT</p></a></li>
+                <li><a>INSERT INTO habitat (name)
+                    VALUES ('Savanna');<p>You may specify the columns in which the data is added. The remaining columns are filled with default values or NULLs</p></a></li>
             </ul>
         </div>
         <div class="box box#">
