@@ -133,14 +133,167 @@
                     VALUES ('Savanna');<p>You may specify the columns in which the data is added. The remaining columns are filled with default values or NULLs</p></a></li>
             </ul>
         </div>
-        <div class="box box#">
-            <h1>Coming soon!</h1>
+        <div class="box box201">
+            <h1>Updating data</h1>
             <ul>
                 <hr>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
-                <li><a><p></p></a></li>
+                <li><a>UPDATE animal
+                    SET
+                      species = 'Duck',
+                      name = 'Quack'
+                    WHERE id = 2;
+                    <p>To update the data in a table, use UPDATE</p></a></li>
+            </ul>
+        </div>
+        <div class="box box202">
+            <h1>Deleting data</h1>
+            <ul>
+                <hr>
+                <li><a>DELETE FROM animal
+                    WHERE id = 1;<p>To delete data from a table, use DELETE</p></a></li>
+                <li><a>TRUNCATE TABLE animal;<p>To delete all data from a table, use TRUNCATE TABLE</p></a></li>
+            </ul>
+        </div>
+        <div class="box box203">
+            <h1>Aggregate functions</h1>
+            <ul>
+                <hr>
+                <li><a>AVG(expr)<p>average value of expr for the group.</p></a></li>
+                <li><a>COUNT(expr)<p>count of expr values within the group.</p></a></li>
+                <li><a>MAX(expr)<p> maximum value of expr values within the group.</p></a></li>
+                <li><a>MIN(expr)<p>minimum value of expr values within the group.</p></a></li>
+                <li><a>SUM(expr)<p>sum of expr values within the group.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box204">
+            <h1>Count</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT COUNT(*)
+                    FROM animal;
+                    <p>To count the rows in the table</p></a></li>
+                <li><a>SELECT COUNT(name)
+                    FROM animal;
+                    <p>To count the non-NULL values in a column</p></a></li>
+                <li><a>SELECT COUNT(DISTINCT name)
+                    FROM animal;<p>To count unique values in a column</p></a></li>
+            </ul>
+        </div>
+        <div class="box box205">
+            <h1>GROUP BY</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT species, COUNT(id)
+                    FROM animal
+                    GROUP BY species;
+                    <p>To count the animals by species</p></a></li>
+                <li><a>SELECT habitat_id, AVG(age),
+                    MIN(age), MAX(age)
+             FROM animal
+             GROUP BY habitat_id;<p>To get the average, minimum, and maximum ages by habitat</p></a></li>
+            </ul>
+        </div>
+        <div class="box box206">
+            <h1>Copying data</h1>
+            <ul>
+                <hr>
+                <li><a>\copy animal FROM 'animal.csv' CSV HEADER<p>To import data from a CSV file into a table</p></a></li>
+                <li><a>\copy (SELECT * FROM animal) TO 'animal.csv' CSV HEADER<p>To export data from a query to a CSV file</p></a></li>
+            </ul>
+        </div>
+        <div class="box box207">
+            <h1>Casting</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT 25.5::INTEGER; 
+                    -- result: 26<p>To change the type of a value, use the :: operator</p></a></li>
+                <li><a>SELECT CAST(column AS DOUBLE PRECISION);<p>You may also use CAST(). This is useful when the name of the type contains spaces, e.g., double precision</p></a></li>
+            </ul>
+        </div>
+        <div class="box box208">
+            <h1>Filtering the output</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT name
+                    FROM city
+                    WHERE name != 'Berlin';<p>To fetch the city names that are not Berlin</p></a></li>
+            </ul>
+        </div>
+        <div class="box box209">
+            <h1>Text operators</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT name
+                    FROM city
+                    WHERE name LIKE 'P%';<p>To fetch the city names that start with a 'P'</p></a></li>
+                <li><a>SELECT name
+                    FROM city
+                    WHERE name LIKE '_ublin';<p>To fetch the city names that start with any letter followed by 'ublin' (like Dublin in Ireland or Lublin in Poland)</p></a></li>
+            </ul>
+        </div>
+        <div class="box box210">
+            <h1>Concatenation</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT 'Hi ' || 'there!';
+                    <br>-- result: Hi there!<br>SELECT CONCAT('Hello ', 'there!');
+                    <br>-- result: Hello there!
+                    <p>To concatenate two strings, use the || operator or the CONCAT() function</p></a></li>
+                <li><a>SELECT 'Great ' || 'day' || NULL;
+                    <br>-- result: NULL<p>Note that with ||, the result is NULL if any of the strings is NULL</p></a></li>
+                <li><a>SELECT CONCAT('Good ', 'day', NULL);
+                    <br>-- result: Good day<p>In contrast, CONCAT() ignores NULL</p></a></li>
+            </ul>
+        </div>
+        <div class="box box211">
+            <h1>Other useful text functions</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT LENGTH
+                    ('LearnSQL.com');
+                    <br>-- result: 12
+                    <p>To get the count of characters in a string</p></a></li>
+                <li><a>SELECT LOWER
+                    ('LEARNSQL.COM');
+                    <br>-- result: learnsql.com<p>To convert all letters to lowercase</p></a></li>
+                <li><a>SELECT UPPER
+                    ('LearnSQL.com');
+                    <br>-- result: LEARNSQL.COM<p>To convert all letters to uppercase</p></a></li>
+                <li><a>SELECT INITCAP
+                    ('hello world');
+                    <br>-- result: 'Hello World'<p>To capitalize the first letter of each word in a string, use INITCAP()</p></a></li>
+                <li><a>SELECT SUBSTRING
+                    ('LearnSQL.com', 9);
+                    <br>-- result: .com<br>SELECT SUBSTRING
+                    ('LearnSQL.com', 1, 5);
+                    <br>-- result: Learn<p>To get a part of a string</p></a></li>
+                <li><a>SELECT REPLACE
+                    ('LearnSQL.com', 'SQL', 'Python'); 
+                    <br>-- result: LearnPython.com<p>To replace a part of a string</p></a></li>
+            </ul>
+        </div>
+        <div class="box box212">
+            <h1>Numeric functions</h1>
+            <ul>
+                <hr>
+                <li><a>SELECT 60 * 60 * 24 * 7; 
+                    <br>-- result: 604800<p>To get the number of seconds in a week</p></a></li>
+                <li><a>SELECT 25 / 4; 
+                    <br>-- result 6><p>In PostgreSQL, the division operator / performs an integer division on integer arguments</p></a></li>
+                <li><a>SELECT 25::numeric / 4; 
+                    <br>-- result 6.25<br>SELECT 25.0 / 4; 
+                    <br>-- result 6.25<p>Avoid integer division by including at least one non-integer argument</p></a></li>
+                <li><a>SELECT MOD(13, 2); 
+                    <br>-- result: 1<br>SELECT 13 % 2; 
+                    <br>-- result: 1<p>To get the remainder of a division</p></a></li>
+                <li><a>SELECT ROUND(1234.56789); 
+                    <br>-- result: 1235<p>To round a number to its nearest integer</p></a></li>
+                <li><a>SELECT ROUND(1234.56789, 3);
+                    <br>-- result: 1234.568<p>To round a number to three decimal places (NUMERIC arguments only)</p></a></li>
+                <li><a>SELECT ABS(-12); 
+                    <br>-- result: 12<p>To get the absolute value of a number</p></a></li>
+                <li><a>SELECT SQRT(9); 
+                    <br>-- result: 3<p>To get the square root of a number:</p></a></li>
             </ul>
         </div>
     <script src="../script.js"></script>
