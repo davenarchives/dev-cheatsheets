@@ -485,7 +485,12 @@ hr {
  .box212 { grid-row: span 26; background-color: #ffffff }
  .box213 { grid-row: span 7; background-color: #ffffff }
  .box214 { grid-row: span 7; background-color: #ffffff }
- .box215 { grid-row: span 7; background-color: #ffffff }
+ .box215 { grid-row: span 23; background-color: #ffffff }
+ .box216 { grid-row: span 9; background-color: #ffffff }
+ .box217 { grid-row: span 13; background-color: #ffffff }
+ .box218 { grid-row: span 13; background-color: #ffffff }
+ .box219 { grid-row: span 11; background-color: #ffffff }
+ .box220 { grid-row: span 24; background-color: #ffffff }
 
 
 

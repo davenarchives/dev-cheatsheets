@@ -236,7 +236,7 @@
             <ul>
                 <hr>
                 <li><a>SELECT 'Hi ' || 'there!';
-                    <br>-- result: Hi there!<br>SELECT CONCAT('Hello ', 'there!');
+                    <br>-- result: Hi there!<br><br>SELECT CONCAT('Hello ', 'there!');
                     <br>-- result: Hello there!
                     <p>To concatenate two strings, use the || operator or the CONCAT() function</p></a></li>
                 <li><a>SELECT 'Great ' || 'day' || NULL;
@@ -294,6 +294,102 @@
                     <br>-- result: 12<p>To get the absolute value of a number</p></a></li>
                 <li><a>SELECT SQRT(9); 
                     <br>-- result: 3<p>To get the square root of a number:</p></a></li>
+            </ul>
+        </div>
+        <div class="box box213">
+            <h1>Useful NULL functions</h1>
+            <ul>
+                <li><a>SELECT name
+                    FROM city
+                    WHERE rating IS NOT NULL;<p>To fetch the names of the cities whose rating values are not missing</p></a></li>
+            </ul>
+        </div>
+        <div class="box box214">
+            <h1>COALESCE</h1>
+            <ul>
+                <li><a>SELECT domain,
+                    COALESCE(domain, 'domain missing')
+                   FROM contacts;<p>To replace NULL in a query with something meaningful</p></a></li>
+            </ul>
+        </div>
+        <div class="box box214">
+            <h1>NULLIF</h1>
+            <ul>
+                <li><a>SELECT last_month, this_month,
+                    this_month * 100.0 / NULLIF(last_month, 0) AS better_by_percent
+                  FROM video_views;<p>To save yourself from division by 0 errors</p></a></li>
+            </ul>
+        </div>
+        <div class="box box215">
+            <h1>Date and time</h1>
+            <ul>
+                <li><a>DATE<p>a date with a resolution of one day; stores the year, month, and day in the YYYY-MM-DD format.</p></a></li>
+                <li><a>TIME<p> a time of day with a resolution of one microsecond; stores the hours, minutes, seconds, and fractional seconds in the HH:MM:SS.SSSSSS format.</p></a></li>
+                <li><a>TIMESTAMP WITH TIME ZONE<p>a timestamp with the time zone; stores the date and the time along with the corresponding time zone information. The range is from '4713-11-24 00:00:00' BC to '294276-12-31 23:59:59' AD.</p></a></li>
+                <li><a>TIMESTAMP<p> a timestamp without the time zone; stores the date and the time. PostgreSQL handles TIMESTAMP values automatically with time zone conversion.</p></a></li>
+                <li><a>INTERVAL<p> a duration of time, such as 3 days, 4 hours, and 30 minutes.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box216">
+            <h1>What time is it?</h1>
+            <ul>
+                <li><a>CURRENT_TIME<p>to get the current time.</p></a></li>
+                <li><a>CURRENT_DATE<p>to get the current date.</p></a></li>
+                <li><a>CURRENT_TIMESTAMP<p>to get the current timestamp with both of the above.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box217">
+            <h1>Creating date/time values</h1>
+            <ul>
+                <li><a>SELECT '2023-12-31'::date;<br>SELECT '15:31'::time;<br>SELECT '2023-12-31 23:59:29'::timestamp;<p>To create a date, time, or datetime value, write it as a string and cast it to the desired type.</p></a></li>
+                <li><a>SELECT airline, flight_number, departure_time
+                    FROM airport_schedule
+                    WHERE departure_time &lt '12:00';<p>You may skip casting in simple conditions. The database knows what you mean.</p></a></li>
+                <li><a><p></p></a></li>
+                <li><a><p></p></a></li>
+                <li><a><p></p></a></li>
+            </ul>
+        </div>
+        <div class="box box218">
+            <h1>Intervals</h1>
+            <ul>
+                <li><a>INTERVAL '1 year' + INTERVAL '3 months'<p>An interval is the duration between two points in time.
+
+                    <br><br>To define an interval: INTERVAL '3 days'
+                    
+                    <br><br>This syntax consists of the INTERVAL keyword, a value, and a time part keyword (YEAR, QUARTER, MONTH, WEEK, DAY, HOUR, MINUTE, SECOND, MICROSECOND).
+                    
+                    <br><br>You may combine different INTERVALs using the + or - operator</p></a></li>
+            </ul>
+        </div>
+        <div class="box box219">
+            <h1>Extracting parts of dates</h1>
+            <ul>
+                <li><a>SELECT EXTRACT(MONTH FROM '2023-12-31'::DATE);
+                    <br>-- result: 12<p>To extract a part of a date, use EXTRACT()</p></a></li>
+                <li><a>SELECT DATE_PART('day', '2023-12-31'::DATE); 
+                    <br>-- result: 31<p>You may also use DATE_PART(). It extracts specific components from a date or timestamp.</p></a></li>
+            </ul>
+        </div>
+        <div class="box box220">
+            <h1>Date arithmetics</h1>
+            <ul>
+                <li><a>SELECT '2023-10-31'::DATE + INTERVAL '2 months';
+                    <br>-- result: '2023-12-31'
+                    <br><br>SELECT '2024-04-05'::DATE + INTERVAL '-3 days';
+                    <br>-- result: '2024-04-02'
+                    <br><br>SELECT '2023-06-10 07:55:00'::TIMESTAMP + INTERVAL '2 months';
+                    <br>-- result: '2023-08-10 07:55:00'
+                    <br><br>SELECT '2023-02-12 10:20:24'::TIMESTAMP + INTERVAL '-12:43:02';
+                    <br>-- result: '2023-02-11 21:37:22'<p>To add or subtract an INTERVAL from a date, time, or timestamp</p></a></li>
+                <li><a>SELECT '2024-01-01'::date - '2023-01-02'::date AS date_diff;
+                    <br>-- result: 364<p>To find the difference between two dates in days</p></a></li>
+                <li><a>SELECT DATE_TRUNC('hour', '2023-01-15 14:38:00'::TIMESTAMP);
+                    <br>-- result: '2023-01-15 14:00'
+                    <br><br>SELECT DATE_TRUNC('month', '2023-12-30'::DATE);
+                    <br>-- result: '2023-12-01'<p>DATE_TRUNC() in PostgreSQL truncates date or timestamp values to the specified time units.</p></a></li>
+                <li><a><p></p></a></li>
+                <li><a><p></p></a></li>
             </ul>
         </div>
     <script src="../script.js"></script>
