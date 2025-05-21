@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/png" href="images/bookstack.png">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/bookstack.png" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dev Cheatsheets</title>
 </head>
 <body>
+    <div id="home"></div> <!-- Added this so #home link works -->
+
     <header class="header">
         <div class="logo">
             <a href="">
                 <span>Dev Cheatsheets</span>
-                <img src="images/bookstack.png" alt="Logo">
+                <img src="images/bookstack.png" alt="Logo" />
             </a>
         </div>
         <div class="search-container">
-            <input type="text" class="search-bar" placeholder="Search..." id="search-input">
+            <input type="text" class="search-bar" placeholder="Search..." id="search-input" />
         </div>
         <nav class="navbar">
-            <a href="#home"><i class='bx bx-home-alt'></i>Home</a> <!-- Link to the header -->
-            <a href="#categories"><i class='bx bx-category-alt'></i>Categories</a>
-            <a href="about.html#about"><i class='bx bx-info-circle'></i>About</a>
+            <a href="#home"><i class="bx bx-home-alt"></i>Home</a> <!-- Link fixed -->
+            <a href="#categories"><i class="bx bx-category-alt"></i>Categories</a>
+            <a href="about.html#about"><i class="bx bx-info-circle"></i>About</a>
         </nav>
         <div class="github">
             <a href="https://github.com/davenarchives/dev-cheatsheets" target="_blank">
@@ -31,148 +33,153 @@
         </div>
     </header>
     <!--------------------------------------------------------------------------------------------------------->
+
     <section class="hero">
         <div class="hero-logo">
-            <h1><i class='bx bx-book-bookmark'></i>Dev Cheatsheets</h1>
+            <h1><i class="bx bx-book-bookmark"></i>Dev Cheatsheets</h1>
         </div>
-        <p>A collection of cheat sheets for programming languages, frameworks, and development tools, designed to support developers at every level.</p>
-        <button class="learn-more"><a href="about.html#about">
-            Learn More </a><i class='bx bx-right-arrow-alt' ></i>
-          </button>
+        <p>
+            A collection of cheat sheets for programming languages, frameworks, and
+            development tools, designed to support developers at every level.
+        </p>
+        <button class="learn-more">
+            <a href="about.html#about">Learn More </a
+            ><i class="bx bx-right-arrow-alt"></i>
+        </button>
         <div class="features">
-          <div class="feature">
-            <span><i class='bx bx-book' ></i></i></span>
-            <h3>Comprehensive</h3>
-            <hr>
-            <p>Find cheat sheets for a wide variety of programming languages and tools.</p>
-          </div>
-          <div class="feature">
-            <span><i class='bx bx-time-five' ></i></i></span>
-            <h3>Up-to-Date</h3>
-            <hr>
-            <p>Regularly updated with the latest information and best practices.</p>
-          </div>
-          <div class="feature">
-            <span><i class='bx bx-search' ></i></span>
-            <h3>Easy to Access</h3>
-            <hr>
-            <p>All cheat sheets are just a search away, making your work faster and easier.</p>
-          </div>
+            <div class="feature">
+                <span><i class="bx bx-book"></i></span>
+                <h3>Comprehensive</h3>
+                <hr />
+                <p>Find cheat sheets for a wide variety of programming languages and tools.</p>
+            </div>
+            <div class="feature">
+                <span><i class="bx bx-time-five"></i></span>
+                <h3>Up-to-Date</h3>
+                <hr />
+                <p>Regularly updated with the latest information and best practices.</p>
+            </div>
+            <div class="feature">
+                <span><i class="bx bx-search"></i></span>
+                <h3>Easy to Access</h3>
+                <hr />
+                <p>All cheat sheets are just a search away, making your work faster and easier.</p>
+            </div>
         </div>
     </section>
     <!--------------------------------------------------------------------------------------------------------->
+
     <main class="container" id="categories">
         <div class="divider">
             <span class="text">01. Languages</span>
-            <hr>
-        </div>   
+            <hr />
+        </div>
 
         <div class="box">
             <a href="languages/python.html">
-                <img src="images/python-logo.png" alt="python">
+                <img src="images/python-logo.png" alt="python" />
                 <span class="hover-text">Python</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/java.html">
-                <img src="images/java-logo-1.png" alt="java">
+                <img src="images/java-logo-1.png" alt="java" />
                 <span class="hover-text">Java</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/c.html">
-                <img src="images/C_Logo.png" alt="c">
+                <img src="images/C_Logo.png" alt="c" />
                 <span class="hover-text">C</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/html.html">
-                <img src="images/HTML5_logo_and_wordmark.svg.png" alt="html">
+                <img src="images/HTML5_logo_and_wordmark.svg.png" alt="html" />
                 <span class="hover-text">HTML</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/css.html">
-                <img src="images/css-logo.png" alt="css">
+                <img src="images/CSS-Logo-2011.png" alt="css" />
                 <span class="hover-text">CSS</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/javascript.html">
-                <img src="images/javascript.png" alt="javascript">
+                <img src="images/javascript.png" alt="javascript" />
                 <span class="hover-text">JavaScript</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/cpp.html">
-                <img src="images/C++_logo.png" alt="c++">
+                <img src="images/C++_logo.png" alt="c++" />
                 <span class="hover-text">C++</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/cs.html">
-                <img src="images/Logo_C_sharp.svg.png" alt="c#">
+                <img src="images/Logo_C_sharp.svg.png" alt="c#" />
                 <span class="hover-text">C#</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/php.html">
-                <img src="images/php.png" alt="php">
+                <img src="images/php.png" alt="php" />
                 <span class="hover-text">PHP</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/ruby.html">
-                <img src="images/Ruby_logo.png" alt="ruby">
+                <img src="images/Ruby_logo.png" alt="ruby" />
                 <span class="hover-text">Ruby</span>
             </a>
         </div>
 
         <div class="box">
             <a href="languages/markdown.html">
-                <img src="images/markdown-icon.webp" alt="markdown">
+                <img src="images/markdown-icon.webp" alt="markdown" />
                 <span class="hover-text">Markdown</span>
             </a>
         </div>
 
-        <!--------------------------------------------------------------------------------------------------------->           
+        <!--------------------------------------------------------------------------------------------------------->
         <div class="divider">
             <span class="text">02. Frameworks & Libraries</span>
-            <hr>
-        </div>  
+            <hr />
+        </div>
 
         <div class="box">
             <a href="frameworks/react.html">
-                <img src="images/React-icon.svg.png" alt="react">
+                <img src="images/React-icon.svg.png" alt="react" />
                 <span class="hover-text">React</span>
             </a>
         </div>
 
         <div class="box">
             <a href="frameworks/angular.html">
-                <img src="images/Angular_full_color_logo.svg.png" alt="angular">
+                <img src="images/Angular_full_color_logo.svg.png" alt="angular" />
                 <span class="hover-text">Angular</span>
             </a>
-
         </div>
         <div class="box">
             <a href="frameworks/vue.html">
-                <img src="images/Vue.js_Logo_2.svg.png" alt="vue">
+                <img src="images/Vue.js_Logo_2.svg.png" alt="vue" />
                 <span class="hover-text">Vue</span>
             </a>
         </div>
         <div class="box">
             <a href="frameworks/bootstrap.html">
-                <img src="images/Bootstrap_logo.svg.png" alt="bootstrap">
+                <img src="images/Bootstrap_logo.svg.png" alt="bootstrap" />
                 <span class="hover-text">Bootstrap</span>
             </a>
         </div>
@@ -180,30 +187,30 @@
         <!--------------------------------------------------------------------------------------------------------->
         <div class="divider">
             <span class="text">03. Databases</span>
-            <hr>
-        </div>  
+            <hr />
+        </div>
 
         <div class="box">
             <a href="databases/dbms.html">
-                <img src="images/dbms.png" alt="dbms">
+                <img src="images/dbms.png" alt="dbms" />
                 <span class="hover-text">DBMS</span>
             </a>
         </div>
         <div class="box">
             <a href="databases/sql.html">
-                <img src="images/sql-logo.png" alt="sql">
+                <img src="images/sql-logo.png" alt="sql" />
                 <span class="hover-text">SQL</span>
             </a>
         </div>
         <div class="box">
             <a href="databases/postgre.html">
-                <img src="images/postgre.png" alt="postgresql">
+                <img src="images/postgre.png" alt="postgresql" />
                 <span class="hover-text">PostgreSQL</span>
             </a>
         </div>
         <div class="box">
             <a href="databases/mongodb.html">
-                <img src="images/mongoDB.png" alt="mongodb">
+                <img src="images/mongoDB.png" alt="mongodb" />
                 <span class="hover-text">MongoDB</span>
             </a>
         </div>
@@ -211,46 +218,45 @@
         <!--------------------------------------------------------------------------------------------------------->
         <div class="divider">
             <span class="text">04. DevOps</span>
-            <hr>
-        </div>  
+            <hr />
+        </div>
 
         <div class="box">
             <a href="devops/git.html">
-                <img src="images/Git-Icon-1788C.png" alt="git">
+                <img src="images/Git-Icon-1788C.png" alt="git" />
                 <span class="hover-text">Git</span>
             </a>
         </div>
         <div class="box">
             <a href="devops/linux.html">
-                <img src="images/linux.png" alt="Linux">
+                <img src="images/linux.png" alt="Linux" />
                 <span class="hover-text">Linux</span>
             </a>
         </div>
         <div class="box">
             <a href="devops/docker.html">
-                <img src="images/Docker_logo_logos-512.webp" alt="docker">
+                <img src="images/Docker_logo_logos-512.webp" alt="docker" />
                 <span class="hover-text">Docker</span>
             </a>
         </div>
         <!--------------------------------------------------------------------------------------------------------->
         <div class="divider">
             <span class="text">05. Resources</span>
-            <hr>
-        </div>  
+            <hr />
+        </div>
 
         <div class="box">
             <a href="resources/pdf.html">
-                <img src="images/pdf.png" alt="pdf">
+                <img src="images/pdf.png" alt="pdf" />
                 <span class="hover-text">Resources</span>
             </a>
         </div>
         <div class="box">
             <a href="resources/cheatsheet.html">
-                <img src="images/CheatSheet_30187.png" alt="cheatsheet">
+                <img src="images/CheatSheet_30187.png" alt="cheatsheet" />
                 <span class="hover-text">Misc</span>
             </a>
         </div>
-
     </main>
     <script src="headerscroller.js"></script>
     <script src="search.js"></script>
