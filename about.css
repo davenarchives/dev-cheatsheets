@@ -223,7 +223,7 @@ html {
 }
 
 .feature {
-  margin: 0.5rem;
+  margin: 1rem;
   padding: 1.5rem;
   border: 2px solid var(--text-color);
   background-color: var(--card-background);
@@ -234,8 +234,8 @@ html {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 300px;
-  height: auto;
+  max-width: 20rem;
+  height: 20rem;
   min-height: 230px;
   transition: transform var(--transition-speed) ease-in-out, box-shadow var(--transition-speed) ease-in-out,
     border-color var(--transition-speed) ease-in-out, background-color var(--transition-speed) ease-in-out;
