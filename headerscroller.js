@@ -1,11 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.header');
   const navbarLinks = document.querySelectorAll('.navbar a');
+  const backToTopButton = document.querySelector('[data-back-to-top]');
 
-  // Change header style on scroll
-  window.addEventListener('scroll', () => {
+  const handleScroll = () => {
     header.classList.toggle('scrolled', window.scrollY > 0);
-  });
+    if (backToTopButton) {
+      const shouldShow = window.scrollY > 400;
+      backToTopButton.classList.toggle('back-to-top--visible', shouldShow);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll();
+
+  if (backToTopButton) {
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   // Function to set active link
   const setActiveLink = (hash) => {
